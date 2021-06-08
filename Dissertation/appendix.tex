@@ -10,6 +10,116 @@
 
 Динамический аспект формализма коррелированного расширения тоже не оставался без внимания исследователей. Предлагалось немало процедур разыгрывания для итеративных игр, обеспечивающих сходимость к коррелированным равновесиям. Среди множества работ на эту тему выделяется статья Серджиу Харта и Андреу Мас"~Колелла <<A simple adaptive procedure leading to correlated equilibrium>> \cite{Hart}, в которой авторы предложили так называемую процедуру сопоставления потерь. Применяя её, игроки каждый раз отклоняются от своих текущих стратегий пропорционально мере понесённого ими на предыдущих ходах ущерба от не использования иных стратегий. Показывается, что такая адаптивная процедура гарантирует в любой игре сходимость с вероятностью $1$ эмпирического распределения розыгрышей к множеству коррелированных равновесий.
 
+\chapter{Доказательство теоремы об изоморфизме пространств корреляции}\label{app:B}
+
+Прежде чем перейти к доказательству основного утверждения потребуется ввести дополнительный инструментарий:
+
+\begin{definition}
+	Измельчением множества исходов $X = X^1 \times \ldots \times X^m$ до конечного множества исходов $Y = Y^1 \times \ldots \times Y^m$ называется любое отображение $\rho = (\rho^1, \ldots, \rho^m)$, где каждая компонента $\rho^a$ отображает $Y^a$ в $X^a$.
+\end{definition}
+
+При помощи измельчений можно задавать связи между разбиениями с различными кодоменами. Если разбиения $f : \Omega \rightarrow X$ и $g : \Omega \rightarrow Y$ таковы, что $f = \rho \circ g$, то $f^{-1}(x) = \bigcup_{y \in \rho^{-1}(x)} g^{-1}(y), \forall x \in X$. При этом $f$ можно называть измельчимым до $g$.
+
+Разбиения одного и того же пространства можно комбинировать. Например, из разбиений $g_i : \Omega \rightarrow Y_i = Y_i^1 \times \ldots \times Y_i^m, i=\overline{1,n}$ можно построить их комбинацию $g_1 \diamond \ldots \diamond g_n : \Omega \rightarrow Y_{(n)}$, где $Y_{(n)}^a = Y_1^a \times \ldots \times Y_n^a$ и $(g_1 \diamond \ldots \diamond g_n)^a(\omega) = (g_1^a(\omega), \ldots, g_n^a(\omega)), \forall \omega \in \Omega, a =\overline{1,m}$. Эта комбинация разбиений связана со своими компонентами измельчениями"~проекциями: $g_i  = \pi_i \circ (g_1 \diamond \ldots \diamond g_n), \pi_i^a(x_1^a, \ldots, x_n^a) = x_i^a$.
+
+Аналогично комбинируются и измельчения с общим кодоменом. Например, из измельчений $\rho_i : Y_i \rightarrow X, i=\overline{1,n}$ можно построить комбинацию $\rho_1 \wr \ldots \wr \rho_n : Y_{[n]} \rightarrow X$, где $Y_{[n]}^a = \{(y_1^a, \ldots, y_n^a) \in Y_{(n)}^a \mid \rho_1^a(y_1^a) = \ldots = \rho_n^a(y_n^a)\}, a =\overline{1,m}$, причём на своей области определения $\rho_1 \wr \ldots \wr \rho_n$ совпадает со всеми $\rho_i \circ \pi_i$. Заметим, что
+\begin{equation*}
+	f = \rho_i \circ g_i, i=\overline{1,n} \;\Leftrightarrow\; f = (\rho_1 \wr \ldots \wr \rho_n) \circ (g_1 \diamond \ldots \diamond g_n).
+\end{equation*}
+
+\begin{definition}
+	В пространстве корреляции $\Phi = \langle A, \Omega, \mathfrak{I}^a, \mathbb{P}, a \in A \rangle$ структурой разбиения $f : \Omega \rightarrow X$, порождённой измельчением $\rho : Y \rightarrow X$, называется множество $H_{\Phi,\rho}(f) = \{\mathbb{P} \circ g^{-1} \mid g \models \Phi, f = \rho \circ g\}$, состоящее из мер $\mu : Y \rightarrow \mathbb{R}_{\ge 0}$. Также обозначим $H_{\Phi,\rho}^{-1}(\mu) = \{f \models \Phi \mid \mu \in H_{\Phi,\rho}(f)\}$.
+\end{definition}
+
+\begin{lemma} \label{lemma:tyhon}
+	Для всех $\rho : Y \rightarrow X$ и $\mu : Y \rightarrow \mathbb{R}_{\ge 0}$ множество $H_{\Phi,\rho}^{-1}(\mu) \subseteq X^{\Omega}$ компактно в полуметрике
+	\begin{equation*}
+		\operatorname{dis}(f_1, f_2) = \frac{1}{2} \sum_{x \in X} \left| \mathbb{P}(f_1^{-1}(x)) - \mathbb{P}(f_2^{-1}(x)) \right|.
+	\end{equation*}
+\end{lemma}
+
+\begin{proof}
+	Переформулируем $H_{\Phi,\rho}^{-1}(\mu) = \rho \circ H_{\Phi}^{-1}(\mu)$, определив для этого отображение $H_{\Phi}^{-1}(\mu) = \{g \models \Phi \mid \mathbb{P} \circ g^{-1} = \mu\}$. Докажем сперва компактность $H_{\Phi}^{-1}(\mu)$, вводя $\operatorname{dis}(g_1, g_2)$ аналогично $\operatorname{dis}(f_1, f_2)$. Полуметрика $\operatorname{dis}$ вполне ограниченна, так как $\operatorname{dis}(g_1, g_2) = d(\mu^Y_1, \mu^Y_2)$, где $\mu^Y_k = \mathbb{P} \circ g_k^{-1}, k=1,2$, а пространство вероятностных мер на любом конечном множестве вполне ограниченно. Замкнутость $H_{\Phi}^{-1}(\mu)$ очевидно следует из $\operatorname{dis}(g_1, g_2) = 0 \Leftrightarrow \mathbb{P} \circ g_1^{-1} = \mathbb{P} \circ g_2^{-1}$. Таким образом $H_{\Phi}^{-1}(\mu)$ компактно в полуметрике $\operatorname{dis}$. Докажем непрерывность отображения $\rho\ \circ : Y^\Omega \rightarrow X^\Omega$, выразив ту же полуметрику по-другому:
+	\begin{equation*}
+		\operatorname{dis}(f_1, f_2) = 1 - \sum_{x \in X} \min \left[\mathbb{P}(f_1^{-1}(x)), \mathbb{P}(f_2^{-1}(x))\right].
+	\end{equation*}
+	
+	Пусть теперь $f_1 = \rho \circ g_1$ и $f_2 = \rho \circ g_2$:
+	\begin{align*}
+		\operatorname{dis}(\rho \circ g_1, \rho \circ g_2) &= 1 - \sum_{x \in X} \min \left[\mathbb{P}(g_1^{-1}(\rho^{-1}(x))), \mathbb{P}(g_2^{-1}(\rho^{-1}(x)))\right] \\
+		&= 1 - \sum_{x \in X} \min \left[\sum_{y \in \rho^{-1}(x)} \mathbb{P}(g_1^{-1}(y)), \sum_{y \in \rho^{-1}(x)} \mathbb{P}(g_2^{-1}(y))\right] \\
+		&\le 1 - \sum_{x \in X} \sum_{y \in \rho^{-1}(x)} \min \left[\mathbb{P}(g_1^{-1}(y)), \mathbb{P}(g_2^{-1}(y))\right] \\
+		&= 1 - \sum_{y \in Y} \min \left[\mathbb{P}(g_1^{-1}(y)), \mathbb{P}(g_2^{-1}(y))\right] = \operatorname{dis}(g_1, g_2).
+	\end{align*}
+	
+	Отображение $\rho\ \circ$ непрерывно, поскольку $\operatorname{dis}(\rho \circ g_1, \rho \circ g_2) \le \operatorname{dis}(g_1, g_2)$. Так как непрерывные отображения сохраняют компактность\cite[с.~199]{Engelking}, $H_{\Phi,\rho}^{-1}(\mu) = \rho \circ H_{\Phi}^{-1}(\mu)$ компактно в полуметрике $\operatorname{dis}$.
+\end{proof}
+
+\begin{definition}
+	Разбиение $f_2 \models \Phi_2$ называется точным образом разбиения $f_1 \models \Phi_1$ (далее $f_1 \precsim f_2$), если их кодомены совпадают ($X_1 = X_2 = X$) и $H_{\Phi_1,\rho}(f_1) \subseteq H_{\Phi_2,\rho}(f_2)$ для всех измельчений $\rho$ с тем же кодоменом. Множество всех точных образов далее будем обозначать $\widehat{\Phi}_2(f_1) = \{f_2 \models \Phi_2 \mid f_1 \precsim f_2\}$.
+\end{definition}
+
+Отношение $f_1 \precsim f_2$ можно понять так "--- на какие бы измеримые части мы не делили компоненты разбиения $f_1$, в разбиении $f_2$ соответствующие компоненты всегда можно разделить на равные им по мере части.
+
+\begin{note}
+	Очевидно, что $f_1 \precsim f_2 \wedge f_2 \precsim f_3 \Rightarrow f_1 \precsim f_3$.
+\end{note}
+
+\begin{lemma} \label{lemma:up}
+	Пусть в пространствах корреляции $\Phi_1$ и $\Phi_2$ разбиения $g_1 : \Omega_1 \rightarrow Y$ и $g_2 : \Omega_2 \rightarrow Y$ таковы, что $g_1 \precsim g_2$. Тогда $\rho \circ g_1 \precsim \rho \circ g_2$ для всех измельчений $\rho : Y \rightarrow X$.
+\end{lemma}
+
+\begin{proof}
+	Возьмём любые $\rho_* : Y_* \rightarrow X$ и $\mu \in H_{\Phi_1,\rho_*}(\rho \circ g_1)$. По определению структуры разбиения, $\exists g_{1*}: \rho_* \circ g_{1*} = \rho \circ g_1, \mathbb{P}_1 \circ g_{1*}^{-1} = \mu$, а доказать требуется, по определению точного образа, что $\exists g_{2*}: \rho_* \circ g_{2*} = \rho \circ g_2, \mathbb{P}_2 \circ g_{2*}^{-1} = \mu$. Рассмотрим комбинацию $g_{1+} = g_1 \diamond g_{1*}$, где $g_1 = \pi \circ g_{1+}$ и $g_{1*} = \pi_* \circ g_{1+}$. Здесь $g_{1+} : \Omega_1 \rightarrow Y_+, Y_+^a = Y^a \times Y_*^a, a=\overline{1,m}$. По определению структуры разбиения, $\mathbb{P}_1 \circ g_{1+}^{-1} \in H_{\Phi_1,\pi}(g_1)$, а значит, поскольку $g_1 \precsim g_2$, существует $g_{2+} : \Omega_2 \rightarrow Y_+$ такое, что $\mathbb{P}_1 \circ g_{1+}^{-1} = \mathbb{P}_2 \circ g_{2+}^{-1} \in H_{\Phi_2,\pi}(g_2)$, т.е. $\pi \circ g_{2+} = g_2$. Из этого с очевидностью следует, что и $\mathbb{P}_2 \circ (\pi_* \circ g_{2+})^{-1} = \mathbb{P}_1 \circ (\pi_* \circ g_{1+})^{-1}$, а значит $g_{2*} = \pi_* \circ g_{2+}$ искомое.
+\end{proof}
+
+\begin{lemma} \label{lemma:down}
+	Пусть в пространствах корреляции $\Phi_1$ и $\Phi_2$ разбиения $f_1 : \Omega_1 \rightarrow X$ и $f_2 : \Omega_2 \rightarrow X$ таковы, что $f_1 \precsim f_2$. Тогда для каждого измельчения $\rho : Y \rightarrow X$ и каждого разбиения $g_1 : \Omega_1 \rightarrow Y$ такого, что $f_1 = \rho \circ g_1$ существует разбиение $g_2 : \Omega_2 \rightarrow Y$ такое, что $f_2 = \rho \circ g_2$ и $g_1 \precsim g_2$.
+\end{lemma}
+
+\begin{proof}
+	Сформулируем требуемое как $\exists g_2 \in \widehat{\Phi}_2(g_1) : f_2 = \rho \circ g_2$ и выразим $\widehat{\Phi}_2$ через структуры разбиений:
+	\begin{equation*}% \label{eq:goal1}
+		\widehat{\Phi}_2(g_1) = \bigcap_{\forall Z, \xi : Z \rightarrow Y, \mu \in H_{\Phi_1,\xi}(g_1)} H_{\Phi_2,\xi}^{-1}(\mu).
+	\end{equation*}
+	
+	По лемме \ref{lemma:tyhon} множество $\widehat{\Phi}_2(g_1)$ является пересечением семейства компактов. Следовательно, для доказательства содержания в нём элемента $g_2 : f_2 = \rho \circ g_2$, достаточно доказать, что такой элемент содержится в пересечении каждого конечного подсемейства тех же компактов:
+	\begin{equation*}% \label{eq:goal1}
+		\exists g_{2*} \in \bigcap_{i=1}^n H_{\Phi_2,\xi_i}^{-1}(\mu_i) : f_2 = \rho \circ g_{2*},
+	\end{equation*}
+	где $\xi_i : Z_i \rightarrow Y$ "--- произвольные измельчения с произвольными доменами $Z_i$ и $\mu_i \in H_{\Phi_1,\xi_i}(g_1)$ также выбраны произвольно.
+	
+	По определению структуры разбиения $\exists h_{1,i} \models \Phi_1 : g_1 = \xi_i \circ h_{1,i}, \mathbb{P} \circ h_{1,i}^{-1} = \mu_i$. Построим их комбинацию $h_1 = h_{1,1} \diamond ... \diamond h_{1,n}$, где $h_{1,i} = \pi_i \circ h_1$, и обозначим $\xi = \xi_1 \wr ... \wr \xi_n$. По определению точного отображения $\exists h_2 \models \Phi_2 : f_2 = \rho \circ \xi \circ h_2, \mathbb{P}_1 \circ h_1^{-1} = \mathbb{P}_2 \circ h_2^{-1}$, а значит можно взять $g_{2*} = \xi \circ h_2$. По построению $f_2 = \rho \circ g_{2*}$ и $\mathbb{P}_1 \circ h_{1,i}^{-1} = \mathbb{P}_1 \circ (\pi_i \circ h_1)^{-1} = \mathbb{P}_2 \circ (\pi_i \circ h_2)^{-1} = \mathbb{P}_2 \circ h_{2,i}^{-1}$, следовательно $g_{2*}$ "--- искомое.
+\end{proof}
+
+\begin{corollary} \label{cor:down}
+	Если пространства корреляции $\Phi_1 \precsim \Phi_2$, то для каждого разбиения $f_1 \models \Phi_1$ существует $f_2 \models \Phi_2$ такое, что $f_1 \precsim f_2$.
+\end{corollary}
+
+\begin{corollary}
+	Леммы \ref{lemma:up}, \ref{lemma:down} и следствие \ref{cor:down} также верны для строгого отношения $f_1 \prec f_2 \equiv f_1 \precsim f_2 \cap \neg (f_1 \succsim f_2)$.
+\end{corollary}
+
+\begin{lemma}
+	$f_1 \precsim f_2 \Leftrightarrow f_1 \succsim f_2$ для любых разбиений одного и того же пространства корреляции.
+\end{lemma}
+
+\begin{proof}
+	Предположим обратное "--- существование $f_1 \prec f_2$ с кодоменом $X$. Тривиальное измельчение $\theta(x) = (0, \ldots, 0), \forall x \in X$ очевидно даёт $\theta \circ f_1 = \theta \circ f_2$. Это противоречит $\theta \circ f_1 \prec \theta \circ f_2$, следующему из леммы \ref{lemma:up}.
+\end{proof}
+
+\begin{corollary} \label{cor:sym}
+	$f_1 \precsim f_2 \Leftrightarrow f_1 \succsim f_2$ для любых разбиений изоморфных пространств корреляции.
+\end{corollary}
+
+\begin{proof}[Доказательство теоремы об изоморфных пространствах]
+	Рассмотрим в игре $\Gamma | \Phi_1$ произвольный профиль стратегий $\mathbf{s}_1$. Этот профиль, очевидно, является разбиением пространства корреляции $\Phi_1$. По следствию \ref{cor:down} существует разбиение $\mathbf{s}_2$ пространства корреляции $\Phi_2$ такое, что $\mathbf{s}_1 \precsim \mathbf{s}_2$, причём, аналогично, $\mathbf{s}_2$ является ещё и профилем стратегий в игре $\Gamma | \Phi_2$. Докажем вложения в обоих направлениях: 1. $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \subseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$ и 2. $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \supseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$ для любой группы игроков $A_*$:
+	\begin{enumerate}
+		\item Рассмотрим произвольный профиль $\mathbf{s}_{1*} \models \Phi_1$, отличающийся от $\mathbf{s}_1$ стратегиями группы $A_*$. Обозначим $\mathbf{s}_{1+} = \mathbf{s}_1 \diamond \mathbf{s}_{1*}$, где $\mathbf{s}_1 = \pi \circ \mathbf{s}_{1+}$ и $\mathbf{s}_{1*} = \pi_* \circ \mathbf{s}_{1+}$. По определению точного образа $H_{\Phi_1,\pi}(\mathbf{s}_1) \subseteq H_{\Phi_2,\pi}(\mathbf{s}_2)$, т.е. $\exists \mathbf{s}_{2+} \models \Phi_2 : \mathbb{P}_1 \circ \mathbf{s}_{1+} = \mathbb{P}_2 \circ \mathbf{s}_{2+}, \mathbf{s}_2 = \pi \circ \mathbf{s}_{2+}$. По построению $\mathbf{s}_{2*} = \pi_* \circ \mathbf{s}_{2+}$ отличается от $\mathbf{s}_2$ ходами тех же игроков, что отличают $\mathbf{s}_{1*}$ от $\mathbf{s}_1$, и $\mathbb{P}_1 \circ \mathbf{s}_{1*}^{-1} = \mathbb{P}_2 \circ \mathbf{s}_{2*}^{-1}$, а значит аналогичным образом $u^a(\mathbf{s}_{1*}) = u^a(\mathbf{s}_{2*})$. В силу произвольности выбора $\mathbf{s}_{1*}$ это влечёт $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \subseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$.
+		\item Так как $\mathbf{s}_1 \succsim \mathbf{s}_2$ по следствию \ref{cor:sym}, рассуждения предыдущего пункта применимы и в обратном направлении.
+	\end{enumerate}
+\end{proof}
+
 \chapter{Примеры вставки листингов программного кода}
 
 Для крупных листингов есть два способа. Первый красивый, но в нём могут быть
@@ -128,7 +238,7 @@ cacheSolve <- function(x, ...) {
 \lstinputlisting[lastline=78,language={R},caption={Листинг из внешнего файла},label={lst:external1}]{listings/run_analysis.R}
 \endgroup
 
-\chapter{Очень длинное название второго приложения, в~котором продемонстрирована работа с~длинными таблицами}\label{app:B}
+\chapter{Очень длинное название второго приложения, в~котором продемонстрирована работа с~длинными таблицами}
 
 \section{Подраздел приложения}\label{app:B1}
 Вот размещается длинная таблица:
