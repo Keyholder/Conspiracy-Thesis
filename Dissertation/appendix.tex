@@ -120,6 +120,75 @@
 	\end{enumerate}
 \end{proof}
 
+\chapter{Доказательство теоремы о пространствах заговоров одной структуры}\label{app:C}
+
+Для доказательства теоремы об изоморфизме пространств заговоров так же понадобится несколько лемм.
+
+\begin{lemma}\label{lemma:card}
+	Для любого счётного семейства множеств $\mathfrak{F}$ найдётся цепь множеств $\mathfrak{T}$ такая, что $\sigma(\mathfrak{F}) = \sigma(\mathfrak{T})$.
+\end{lemma}
+
+\begin{proof}
+	Пусть $\mathfrak{F} = \{F_1, F_2, \ldots\}$. Построим индуктивно последовательность цепей $(\mathfrak{T}_i)$, где каждая следующая цепь включает в себя предыдущую и $\sigma(\mathfrak{T}_i) = \sigma(\{F_1, \ldots, F_i\})$. В качестве базы возьмём $\mathfrak{T}_1 = \{F_1\}$. Шаг индукции: пусть $\mathfrak{T}_{i-1} = \{T_1, \ldots, T_n\}, T_1 \subset \ldots \subset T_n$ и $\sigma(\mathfrak{T}_{i-1}) = \sigma(\{F_1, \ldots, F_{i-1}\})$. Разложим следующий элемент $\mathfrak{F}$ на непересекающиеся дизъюнкты: $F_i = (F_i \cap T_1) \cup (F_i \cap T_2 \setminus T_1) \cup \ldots \cup (F_i \cap T_n \setminus T_{n-1}) \cup (F_i \setminus T_n)$. В этой записи $j$"~й дизъюнкт вложен в соответствующую разность $T_j \setminus T_{j-1}$ соседних элементов цепи. Следовательно, для его порождения достаточно пополнить $\mathfrak{T}_{i-1}$ множеством $T_{j-} = F_i \cap T_j \cup T_{j-1}$, сохраняющим структуру цепи, поскольку $T_{j-1} \subseteq T_{j-} \subseteq T_j$. Таким образом, чтобы получить $F_i$ целиком,
+	\begin{equation*}
+		\mathfrak{T}_i = \mathfrak{T}_{i-1} \cup \left\{
+		\begin{aligned}
+			&F_i \cap T_1,\\
+			&F_i \cap T_2 \cup T_1,\\
+			&\cdots\\
+			&F_i \cap T_n \cup T_{n-1},\\
+			&F_i \cup T_n
+		\end{aligned}
+		\right\}
+	\end{equation*}
+	
+	Покажем, что предел последовательности $(\mathfrak{T}_i)$ "--- искомая цепь. В самом деле, любой элемент из $\sigma(\mathfrak{F})$ "--- это счётное объединение конечных пересечений множеств $F_i$. Поэтому
+	\begin{equation*}
+		\sigma(\mathfrak{F}) = \bigcup_{i=1}^{\infty} \sigma(\{F_1, \ldots, F_i\}) = \bigcup_{i=1}^{\infty} \sigma(\mathfrak{T}_i) = \sigma(\mathfrak{T}).
+	\end{equation*}
+\end{proof}
+
+\begin{lemma} \label{lemma:max}
+	Максимальная цепь измеримых множеств в безатомическом пространстве порождает безатомическую $\sigma$"~алгебру.
+\end{lemma}
+
+\begin{proof}
+	Пусть максимальная цепь $\mathfrak{T}$ измеримых множеств безатомического пространства $\langle \Omega, \mathfrak{B}, \mathbb{P} \rangle$ порождает алгебру $\sigma(\mathfrak{T})$. Докажем, что для любого $B \in \sigma(\mathfrak{T})$ меры $\mathbb{P}(B) > 0$ найдётся $B' \in \sigma(\mathfrak{T})$ такое, что $B' \subset B$ и $\mathbb{P}(B) > \mathbb{P}(B') > 0$. Для этого, очевидно, достаточно доказать, что в цепи $\mathfrak{T}$ найдётся множество $T$ такое, что $0 < \mathbb{P}(T \cap B) < \mathbb{P}(B)$. Рассмотрим множества
+	\begin{equation*}
+		\underline{T} = \bigcup_{T_- \in \mathfrak{T} : \mathbb{P}(T_- \cap B) = 0} T_- \quad\text{и}\quad \overline{T} = \bigcap_{T_+ \in \mathfrak{T} : \mathbb{P}(T_+ \cap B) = \mathbb{P}(B)} T_+,
+	\end{equation*}
+	по построению вложенные $\underline{T} \subset \overline{T}$ так, что $\mathbb{P}(\overline{T}) - \mathbb{P}(\underline{T}) \ge \mathbb{P}(B)$. Поскольку цепь $\mathfrak{T}$ максимальна в безатомическом пространстве, существует $T_0 \in \mathfrak{T}$ такое, что $\underline{T} \subset T_0 \subset \overline{T}$. Так как $\underline{T} \subset T_0 \Rightarrow \mathbb{P}(T_0 \cap B) > 0$ и $T_0 \subset \overline{T} \Rightarrow \mathbb{P}(T_0 \cap B) < \mathbb{P}(B)$, значит $T_0$ искомое.
+\end{proof}
+
+\begin{definition}
+	Для любых семейств измеримых множеств $\mathfrak{T} \subseteq 2^\Omega$ и мер $\mathbb{P} : \mathfrak{T} \rightarrow \mathbb{R}_{\ge 0}$ определим отображение $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle : \Omega \rightarrow \mathbb{R}_{\ge 0}$, называемое наименьшей мерой включения и вычисляемое по формуле $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle(\omega) = \inf\{\mathbb{P}(T) \mid \omega \in T \in \mathfrak{T}\}$.
+\end{definition}
+
+\begin{lemma}
+	Если $\mathfrak{T} \subset 2^\Omega$ "--- цепь множеств, порождающая безатомическую $\sigma$"~алгебру, то $\mathbb{P} \circ \operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle^{-1}$ совпадает с мерой Лебега на отрезке $[0, \mathbb{P}(\Omega)]$.
+\end{lemma}
+
+\begin{proof}
+	Поскольку $\mathfrak{T}$ "--- цепь, $\omega \in T \Leftrightarrow \operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle(\omega) \le \mathbb{P}(T), \forall \omega \in \Omega, T \in \mathfrak{T}$. Так как $\mathfrak{T}$ вдобавок порождает безатомическую $\sigma$"~алгебру, то для каждого $0 < t < \mathbb{P}(\Omega)$ найдётся $T \in \mathfrak{T}$ такое, что $\mathbb{P}(T) = t$. Следовательно, функция $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle$ отображает множества $T \in \mathfrak{T}$ на отрезки $[0, \mathbb{P}(T)]$, что очевидно влечёт цель доказательства.
+\end{proof}
+
+\begin{lemma} \label{lemma:consp}
+	Пусть $\langle \Omega, \mathfrak{B}, \mathbb{P} \rangle$ "--- любое безатомическое вероятностное пространство с $\sigma$"~алгеброй, разложимой на $n$ безатомических компонент $\mathfrak{B} = \sigma(\mathfrak{B}_1 \cup \ldots \cup \mathfrak{B}_n)$ таких, что все события из разных компонент совместно независимы, т.е. $\mathbb{P}(B_1 \cap \ldots \cap B_n) = \mathbb{P}(B_1) \ldots \mathbb{P}(B_n)$ для любых $B_i \in \mathfrak{B}_i, i=\overline{1,n}$. Тогда любая измеримая функция с конечным кодоменом $f : \Omega \rightarrow X$ может быть представлена в виде $f = \varphi \circ \mathfrak{r}$, где $\mathfrak{r} : \Omega \rightarrow [0,1]^n$ такова, что $\mathbb{P} \circ \mathfrak{r}^{-1}$ совпадает с мерой Лебега, а $\varphi : [0,1]^n \rightarrow X$ "--- борелевская.
+\end{lemma}
+
+\begin{proof}
+	Рассмотрим обратную функцию $f^{-1} : X \rightarrow \mathfrak{B}$. В силу разложимости $\mathfrak{B}$ её можно представить как предел последовательности конъюнкций:
+	\begin{equation*}
+		f^{-1}(x) = \bigcup_{j=1}^\infty F_1^j(x) \cap \ldots \cap F_n^j(x), \; F_i^j : X \rightarrow \mathfrak{B}_i.
+	\end{equation*}
+	
+	Обозначим семейства множеств $\mathfrak{F}_i = \{F_i^j(x) \mid j \in \mathbb{N}, x \in X\}$ и заметим, что $f$ измерима по $\sigma(\mathfrak{F}_1 \cup \ldots \cup \mathfrak{F}_n)$. По лемме \ref{lemma:card}, существуют цепи множеств $\mathfrak{T}_i \subset \mathfrak{B}_i$ такие, что $\sigma(\mathfrak{F}_i) = \sigma(\mathfrak{T}_i)$. Согласно принципу максимума Хаусдорфа каждая такая цепь вложена в максимальную цепь $\overline{\mathfrak{T}}_i \subset \mathfrak{B}_i$, порождающую безатомическую $\sigma$"~алгебру по лемме \ref{lemma:max}. Построим искомые функции: $\mathfrak{r} = (\operatorname{mim}\langle\overline{\mathfrak{T}}_1, \mathbb{P}\rangle, \ldots, \operatorname{mim}\langle\overline{\mathfrak{T}}_n, \mathbb{P}\rangle)$ и $\varphi = f \circ \mathfrak{r}^{-1}$. Необходимые свойства соблюдаются по построению.
+\end{proof}
+
+\begin{proof}[Доказательство теоремы \ref{the:struct}]
+	Применим лемму \ref{lemma:consp} к произвольному пространству заговоров $\Phi_1$ структуры $\mathfrak{A} = \{A_1, \ldots, A_n\}$, используя в качестве компонент разложения $\mathfrak{B}_1, \ldots, \mathfrak{B}_n$ $\sigma$"~алгебры тайны соответствующих групп заговорщиков. Это даёт для любого разбиения $f_1 \models \Phi_1$ разложение $f_1 = \varphi \circ \mathfrak{r}$. В любом другом пространстве заговоров $\Phi_2$ той же структуры $\mathfrak{A}$ соответствующее разбиение $f_2 \models \Phi_2$ построим похожим образом: $f_2 = \varphi \circ \mathfrak{u}$. Здесь $\varphi$ то же самое, а $\mathfrak{u} = (\operatorname{mim}\langle\mathfrak{W}_1, \mathbb{P}_2\rangle, \ldots, \operatorname{mim}\langle\mathfrak{W}_n, \mathbb{P}_2\rangle)$, где $\mathfrak{W}_i$ - произвольные максимальные цепи, вложенные в $\sigma$"~алгебры соответствующих тайн пространства заговоров $\Phi_2$. Поскольку и $\mathbb{P}_1 \circ \mathfrak{r}^{-1}$, и $\mathbb{P}_2 \circ \mathfrak{u}^{-1}$ обе совпадают с мерой Лебега, то и $\mathbb{P}_1 \circ f_1^{-1} = \mathbb{P}_2 \circ f_2^{-1}$, а значит теорема доказана.
+\end{proof}
+
 \chapter{Примеры вставки листингов программного кода}
 
 Для крупных листингов есть два способа. Первый красивый, но в нём могут быть
