@@ -38,7 +38,7 @@
     % quotient-mode        = fraction, % красивые дроби могут не соответствовать ГОСТ
     fraction-function    = \sfrac,
     separate-uncertainty,
-    ]{siunitx}                      % Размерности SI
+    ]{siunitx}[=v2]                 % Размерности SI
 \sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
 
 % Кириллица в нумерации subequations
@@ -119,6 +119,16 @@
 \usepackage{tabu, tabulary}      % таблицы с автоматически подбирающейся
                                  % шириной столбцов (tabu обязательно
                                  % до hyperref вызывать)
+\makeatletter
+%https://github.com/tabu-issues-for-future-maintainer/tabu/issues/26
+\@ifpackagelater{longtable}{2020/02/07}{
+\def\tabuendlongtrial{%
+    \LT@echunk  \global\setbox\LT@gbox \hbox{\unhbox\LT@gbox}\kern\wd\LT@gbox
+                \LT@get@widths
+}%
+}{}
+\makeatother
+
 \usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
 
 %%% Общее форматирование
