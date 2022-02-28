@@ -1,1 +1,39 @@
 \newcommand\blank[1][\textwidth]{\noindent\rule[-.2ex]{#1}{.4pt}}
+
+%\newtheorem*{theorem}{Теорема}
+\newtheorem{manualtheoreminner}{Теорема}
+\newenvironment{theorem}[1]{%
+	\renewcommand\themanualtheoreminner{#1}%
+	\manualtheoreminner
+}{\endmanualtheoreminner}
+
+%\newtheorem*{lemma}{Лемма}
+\newtheorem{manuallemmainner}{Лемма}
+\newenvironment{lemma}[1]{%
+	\renewcommand\themanuallemmainner{#1}%
+	\manuallemmainner
+}{\endmanuallemmainner}
+
+%\newtheorem*{corollary}{Следствие}
+%\newtheorem{manualcorollaryinner}{Следствие}
+%\newenvironment{corollary}[1]{%
+%	\renewcommand\themanualcorollaryinner{#1}%
+%	\manualcorollaryinner
+%}{\endmanualcorollaryinner}
+
+\theoremstyle{definition}
+
+%\newtheorem*{definition}{Определение}
+\newtheorem{manualdefinitioninner}{Определение}
+\newenvironment{definition}[1]{%
+	\renewcommand\themanualdefinitioninner{#1}%
+	\manualdefinitioninner
+}{\endmanualdefinitioninner}
+
+%\newtheorem*{conjecture}{Гипотеза}
+\newtheorem{manualconjectureinner}{Гипотеза}
+\newenvironment{conjecture}[1]{%
+	\renewcommand\themanualconjectureinner{#1}%
+	\manualconjectureinner
+}{\endmanualconjectureinner}
+
