@@ -76,7 +76,7 @@ export TIKZFILE
 export USEDEV
 
 ##! компиляция всех файлов
-all: synopsis dissertation presentation
+all: synopsis dissertation presentation translation
 
 define compile
 	latexmk -norc -r $(MKRC) $(LATEXMKFLAGS) $(BACKEND) -jobname=$(TARGET) $(SOURCE)
@@ -100,6 +100,12 @@ presentation: SOURCE=presentation
 presentation:
 	$(compile)
 
+##! компиляция диссертации
+translation: TARGET=translation
+translation: SOURCE=translation
+translation:
+	$(compile)
+
 ##! компиляция черновика диссертации
 dissertation-draft: DRAFTON=1
 dissertation-draft: dissertation
@@ -110,7 +116,7 @@ synopsis-draft: synopsis
 
 ##! компиляция диссертации, автореферата, и презентации при помощи pdflatex
 pdflatex: BACKEND=-pdf
-pdflatex: dissertation synopsis presentation
+pdflatex: dissertation synopsis presentation translation
 
 ##! компиляция черновиков всех файлов
 draft: dissertation-draft synopsis-draft
@@ -147,6 +153,7 @@ tikz:
 release: all
 	git add dissertation.pdf
 	git add synopsis.pdf
+	git add translation.pdf
 
 ##! очистка от временных файлов цели TARGET
 clean-target:
@@ -161,16 +168,18 @@ clean:
 	"$(MAKE)" SOURCE=dissertation TARGET=dissertation clean-target
 	"$(MAKE)" SOURCE=synopsis TARGET=synopsis clean-target
 	"$(MAKE)" SOURCE=presentation TARGET=presentation clean-target
+	"$(MAKE)" SOURCE=translation TARGET=translation clean-target
 
 ##! полная очистка проекта от временных файлов
 distclean:
 	"$(MAKE)" SOURCE=dissertation TARGET=dissertation distclean-target
 	"$(MAKE)" SOURCE=synopsis TARGET=synopsis distclean-target
 	"$(MAKE)" SOURCE=presentation TARGET=presentation distclean-target
+	"$(MAKE)" SOURCE=translation TARGET=translation distclean-target
 
 # include after "all" rule
 include examples.mk
 
-.PHONY: all dissertation synopsis presentation dissertation-draft \
+.PHONY: all dissertation synopsis presentation translation dissertation-draft \
 synopsis-draft pdflatex draft synopsis-booklet presentation-booklet\
 tikz release clean-target distclean-target clean distclean
