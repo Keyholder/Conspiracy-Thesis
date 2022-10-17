@@ -1,0 +1,584 @@
+\chapter{A brief review of the literature on the correlated extension of normal form games}\label{app:A}
+
+The concept of correlated extension has become an important tool commonly used in many areas of game theory, and in particular the famous mechanism design relies on it. In this regard, one cannot fail to mention the article by Roger Myerson <<Optimal coordination mechanisms in generalized principal"~agent problems>> \cite{Myerson82}. In it, a generalized principal"~agent problem is formulated, in which agents have both secret information and the ability to make decisions beyond the control of the principal. It is shown that the principal can be limited to incentive-compatible direct coordination mechanisms, in which agents report their information to the principal, who recommends in response strategies that form a correlated equilibrium. In the finite case, optimal coordination mechanisms can be found using linear programming. In addition, the problems of systems with many principals in which a non-cooperative equilibrium may not exist are discussed, so that a definition of a quasi-equilibrium is introduced and its existence is demonstrated. %Концепция коррелированного расширения стала важным общеупотребимым инструментом во многих областях теории игр, и в частности на неё опирается знаменитый дизайн механизмов. В связи с этим нельзя не упомянуть статью Роджера Майерсона <<Optimal coordination mechanisms in generalized principal"~agent problems>> \cite{Myerson82}. В ней формулируется обобщённая задача принципал"~агентов, в которой агенты обладают как тайной информацией, так и возможностью принимать решения, неподконтрольные принципалу. Показывается, что принципал может ограничиваться целенаправленно побуждающими прямыми механизмами координации, в которых агенты докладывают свою информацию принципалу, рекомендующему в ответ стратегии, образующие коррелированное равновесие. В конечном случае оптимальные механизмы координации могут быть найдены при помощи линейного программирования. Кроме того обсуждается проблематика систем с многими принципалами, в которых может не существовать некооперативного равновесия, так что вводится определение и показывается существование квази"~равновесия.
+
+Correlated extension has found its place also in relation to the study of expanded form games. Another article by Roger Myerson <<Multistage Games with Communication>> \cite{Myerson86} deals with multi-stage games with a communication mechanism that operates on the principle of a centralized intermediary. In a communication equilibrium, no player should be able to single-handedly increase their payoff by manipulating their reports or actions. Sequential communication equilibrium is a communication equilibrium with a system of conditional probabilities under which no player can benefit from such manipulations, even if events of zero probability occur. Codominated actions are defined in such a way that any communication equilibrium is sequential if and only if no one uses codominated actions. The prevailing communication equilibrium is defined as the result of the successive exclusion of codominated actions, and its existence is demonstrated. %Коррелированное расширение нашло своё место и применительно к исследованию игр в развёрнутой форме. Ещё одна статья Роджера Майерсона <<Multistage Games with Communication>> \cite{Myerson86} рассматривает многостадийные игры с коммуникационным механизмом, функционирующим по принципу централизованного посредника. В коммуникационном равновесии ни один игрок не должен иметь возможность в одиночку увеличить свой выигрыш, манипулируя своими отчётами или действиями. Последовательное коммуникационное равновесие "--- это коммуникационное равновесие с системой условных вероятностей при которой ни один игрок не может получить выгоду от подобных манипуляций, даже если случаются события нулевой вероятности. Кодоминируемые действия определяются таким образом, что любое коммуникационное равновесие последовательно в том и только том случае, когда никто не использует кодоминируемых действий. Преобладающее коммуникационное равновесие определяется как результат последовательного исключения кодоминируемых действий, и показывается его существование.
+
+Another important milestone was the article <<Correlated equilibrium as an expression of Bayesian rationality>> \cite{Aumann87}, in which Aumann showed that the formalism of correlated equilibrium removes the contradiction between <<Bayesian>> and <<game"~theoretical>> world"~view. From a Bayesian perspective, probabilities can be assigned to anything, even the chance for a player to choose some strategy in a certain game. From the viewpoint of game theory itself, on the contrary, it is traditionally believed that one cannot talk about the probabilities of events occurring at the will of rational agents, so one must instead use the concept of equilibrium (or other game-theoretic constructs). The proposed formalism combines these two stances "--- correlated equilibrium can be viewed as a consequence of Bayesian rationality, since the equilibrium condition is a simple profit maximization by each of the players, taking into account the information known to them. This approach does not require explicit randomization in the actions of the players. Even if a player chooses a specific pure strategy without an element of chance, the probabilistic nature of the strategies reflects the uncertainty of other players in his choice, which is shown in the examples. %Ещё одной важной вехой стала статья <<Correlated equilibrium as an expression of Bayesian rationality>> \cite{Aumann87}, в которой Ауман показал, что формализм коррелированного равновесия снимает противоречие между <<байесовским>> и <<теоретико"~игровым>> взглядом на мир. С байесовской позиции вероятности могут быть сопоставлены с чем угодно, даже с возможностью для игрока выбрать какую"~либо стратегию в некоторой игре. С точки зрения самой теории игр, напротив, традиционно считается, что нельзя говорить о вероятностях событий, происходящих по воле рациональных агентов, нужно вместо этого использовать понятие равновесности (или другие теоретико-игровые конструкты). Предложенный формализм же объединяет две эти точки зрения "--- на коррелированное равновесие можно смотреть как на следствие байесовской рациональности, поскольку условие равновесности представляет собой простую максимизацию выгоды каждым из игроков с учётом известной им информации. При таком подходе не требуется явной рандомизации в действиях игроков. Даже если игрок выбирает конкретную чистую стратегию без элемента случайности, вероятностная природа стратегий отражает неуверенность остальных игроков в его выборе, что и показывается на примерах.
+
+Questions of compatibility of correlated equilibria with more stringent principles of optimality were raised in the article <<Perfect Correlated Equilibria>> \cite{Dhillon} by Amrita Dhillon and Jean Francois Mertens. It introduces the notion of $(\epsilon)$"~perfect correlated equilibria (PCE) resulting from $(\epsilon)$"~perfect equilibrium of some correlation device. It is shown that the <<revealing principle>> for this concept is no longer valid "--- the direct mechanism may not provide perfect equilibrium. The so-called approximately perfect correlated equilibria (APCE) turn out to be the limits of $\epsilon$"~PCE, and the authors reach for them for a complete characterization. In the course of reasoning about APCE <<acceptability>> in a certain sense, however, illustrated arguments are given in favor of PCE seeming to be <<good>> among them. %Вопросы совместимости коррелированных равновесий с более строгими принципами оптимальности поднимались в статье Амриты Дхиллона и Жана Франсуа Мертенса <<Perfect Correlated Equilibria>> \cite{Dhillon}. В ней вводится понятие $(\epsilon)$"~совершенных кореллированных равновесий (PCE), обусловленных $(\epsilon)$"~совершенным равновесием некоторого корреляционного устройства. Показывается, что <<принцип выявления>> для этой концепции теряет силу "--- прямой механизм может и не обеспечивать совершенного равновесия. Так называемые приблизительно совершенные коррелированные равновесия (APCE) оказываются пределами $\epsilon$"~PCE, и авторы достигают для них полной характеризации. В ходе рассуждений о <<приемлемости>> APCE в некотором смысле, приводятся однако иллюстрированные доводы в пользу того, что среди них именно PCE представляются <<хорошими>>.
+
+The dynamic aspect of the correlated extension formalism also did not go unnoticed by researchers. Many procedures have been proposed for playing iterative games that ensure convergence to correlated equilibria. Among the many works on this topic, the article by Sergiu Hart and Andreu Mas"~Colella <<A simple adaptive procedure leading to correlated equilibrium>> \cite{Hart} stands out, in which the authors proposed the so-called regret-matching procedure. Applying it, the players each time deviate from their current strategies in proportion to the extent of the damage they suffered on previous moves from not using other strategies. It is shown that such an adaptive procedure guarantees in any game the convergence with probability $1$ of the empirical distribution of play to the set of correlated equilibria. %Динамический аспект формализма коррелированного расширения тоже не оставался без внимания исследователей. Предлагалось немало процедур разыгрывания для итеративных игр, обеспечивающих сходимость к коррелированным равновесиям. Среди множества работ на эту тему выделяется статья Серджиу Харта и Андреу Мас"~Колелла <<A simple adaptive procedure leading to correlated equilibrium>> \cite{Hart}, в которой авторы предложили так называемую процедуру сопоставления потерь. Применяя её, игроки каждый раз отклоняются от своих текущих стратегий пропорционально мере понесённого ими на предыдущих ходах ущерба от не использования иных стратегий. Показывается, что такая адаптивная процедура гарантирует в любой игре сходимость с вероятностью $1$ эмпирического распределения розыгрышей к множеству коррелированных равновесий.
+
+\chapter{Proof of the theorem on the isomorphism of correlation spaces}\label{app:B}
+
+To prove the theorem on isomorphic spaces, we have to introduce additional tools. %Прежде чем перейти к доказательству основного утверждения потребуется ввести дополнительный инструментарий:
+
+\begin{definition}
+	A refinement of a set $X = X^1 \times \ldots \times X^m$ of outcomes to a finite set $Y = Y^1 \times \ldots \times Y^m$ of outcomes is any mapping $\rho = (\rho^1, \ldots, \rho^m)$, where each component $\rho^a$ takes $Y^a$ to $X^a$. %Измельчением множества исходов $X = X^1 \times \ldots \times X^m$ до конечного множества исходов $Y = Y^1 \times \ldots \times Y^m$ называется любое отображение $\rho = (\rho^1, \ldots, \rho^m)$, где каждая компонента $\rho^a$ отображает $Y^a$ в $X^a$.
+\end{definition}
+
+Using refinements, one can specify connections between partitions with different codomains. If partitions $f : \Omega \rightarrow X$ and $g : \Omega \rightarrow Y$ are such that $f = \rho \circ g$, then $f^{-1}(x) = \bigcup_{y \in \rho^{-1}(x)} g^{-1}(y), \forall x \in X$. In this case, $f$ is said to be refinable to $g$. %При помощи измельчений можно задавать связи между разбиениями с различными кодоменами. Если разбиения $f : \Omega \rightarrow X$ и $g : \Omega \rightarrow Y$ таковы, что $f = \rho \circ g$, то $f^{-1}(x) = \bigcup_{y \in \rho^{-1}(x)} g^{-1}(y), \forall x \in X$. При этом $f$ можно называть измельчимым до $g$.
+
+Partitions of one and the same space can be combined. For example, of the partitions $g_i : \Omega \rightarrow Y_i = Y_i^1 \times \ldots \times Y_i^m, i=\overline{1,n}$, one can construct their combination $g_1 \diamond \ldots \diamond g_n : \Omega \rightarrow Y_{(n)}$, where $Y_{(n)}^a = Y_1^a \times \ldots \times Y_n^a$ and $(g_1 \diamond \ldots \diamond g_n)^a(\omega) = (g_1^a(\omega), \ldots, g_n^a(\omega)), \forall \omega \in \Omega, a =\overline{1,m}$. This combination of partitions is related to its components via refinement-projections: $g_i  = \pi_i \circ (g_1 \diamond \ldots \diamond g_n), \pi_i^a(x_1^a, \ldots, x_n^a) = x_i^a$. %Разбиения одного и того же пространства можно комбинировать. Например, из разбиений $g_i : \Omega \rightarrow Y_i = Y_i^1 \times \ldots \times Y_i^m, i=\overline{1,n}$ можно построить их комбинацию $g_1 \diamond \ldots \diamond g_n : \Omega \rightarrow Y_{(n)}$, где $Y_{(n)}^a = Y_1^a \times \ldots \times Y_n^a$ и $(g_1 \diamond \ldots \diamond g_n)^a(\omega) = (g_1^a(\omega), \ldots, g_n^a(\omega)), \forall \omega \in \Omega, a =\overline{1,m}$. Эта комбинация разбиений связана со своими компонентами измельчениями"~проекциями: $g_i  = \pi_i \circ (g_1 \diamond \ldots \diamond g_n), \pi_i^a(x_1^a, \ldots, x_n^a) = x_i^a$.
+
+Refinements with a common codomain can be combined in a similar way. For example, from the refinements $\rho_i : Y_i \rightarrow X, i=\overline{1,n}$, one can construct a combination $\rho_1 \wr \ldots \wr \rho_n : Y_{[n]} \rightarrow X$, where  $Y_{[n]}^a = \{(y_1^a, \ldots, y_n^a) \in Y_{(n)}^a \mid \rho_1^a(y_1^a) = \ldots = \rho_n^a(y_n^a)\}, a =\overline{1,m}$, and $\rho_1 \wr \ldots \wr \rho_n$ coincides on the domain of itself with all $\rho_i \circ \pi_i$. Note that %Аналогично комбинируются и измельчения с общим кодоменом. Например, из измельчений $\rho_i : Y_i \rightarrow X, i=\overline{1,n}$ можно построить комбинацию $\rho_1 \wr \ldots \wr \rho_n : Y_{[n]} \rightarrow X$, где $Y_{[n]}^a = \{(y_1^a, \ldots, y_n^a) \in Y_{(n)}^a \mid \rho_1^a(y_1^a) = \ldots = \rho_n^a(y_n^a)\}, a =\overline{1,m}$, причём на своей области определения $\rho_1 \wr \ldots \wr \rho_n$ совпадает со всеми $\rho_i \circ \pi_i$. Заметим, что
+\begin{equation*}
+	f = \rho_i \circ g_i, i=\overline{1,n} \;\Leftrightarrow\; f = (\rho_1 \wr \ldots \wr \rho_n) \circ (g_1 \diamond \ldots \diamond g_n).
+\end{equation*}
+
+\begin{definition}
+	In a correlation space $\Phi = \langle A, \Omega, \mathfrak{I}^a, \mathbb{P}, a \in A \rangle$, the structure of partition $f : \Omega \rightarrow X$ generated by a refinement $\rho : Y \rightarrow X$ is the set $H_{\Phi,\rho}(f) = \{\mathbb{P} \circ g^{-1} \mid g \models \Phi, f = \rho \circ g\}$ consisting of the measures $\mu : Y \rightarrow \mathbb{R}_{\ge 0}$. We also set $H_{\Phi,\rho}^{-1}(\mu) = \{f \models \Phi \mid \mu \in H_{\Phi,\rho}(f)\}$. %В пространстве корреляции $\Phi = \langle A, \Omega, \mathfrak{I}^a, \mathbb{P}, a \in A \rangle$ структурой разбиения $f : \Omega \rightarrow X$, порождённой измельчением $\rho : Y \rightarrow X$, называется множество $H_{\Phi,\rho}(f) = \{\mathbb{P} \circ g^{-1} \mid g \models \Phi, f = \rho \circ g\}$, состоящее из мер $\mu : Y \rightarrow \mathbb{R}_{\ge 0}$. Также обозначим $H_{\Phi,\rho}^{-1}(\mu) = \{f \models \Phi \mid \mu \in H_{\Phi,\rho}(f)\}$.
+\end{definition}
+
+\begin{lemma} \label{lemma:tyhon}
+	For all $\rho : Y \rightarrow X$ and $\mu : Y \rightarrow \mathbb{R}_{\ge 0}$, the set $H_{\Phi,\rho}^{-1}(\mu) \subseteq X^{\Omega}$ is compact in the semimetric %Для всех $\rho : Y \rightarrow X$ и $\mu : Y \rightarrow \mathbb{R}_{\ge 0}$ множество $H_{\Phi,\rho}^{-1}(\mu) \subseteq X^{\Omega}$ компактно в полуметрике
+	\begin{equation*}
+		\operatorname{dis}(f_1, f_2) = \frac{1}{2} \sum_{x \in X} \left| \mathbb{P}(f_1^{-1}(x)) - \mathbb{P}(f_2^{-1}(x)) \right|.
+	\end{equation*}
+\end{lemma}
+
+\begin{proof}
+	Let us restate $H_{\Phi,\rho}^{-1}(\mu) = \rho \circ H_{\Phi}^{-1}(\mu)$ by defining $H_{\Phi}^{-1}(\mu) = \{g \models \Phi \mid \mathbb{P} \circ g^{-1} = \mu\}$. First, we prove the compactness of $H_{\Phi}^{-1}(\mu)$ by introducing $\operatorname{dis}(g_1, g_2)$ by analogy with $\operatorname{dis}(f_1, f_2)$. The semimetric $\operatorname{dis}$ is completely bounded, because $\operatorname{dis}(g_1, g_2) = d(\mu^Y_1, \mu^Y_2)$, where $\mu^Y_k = \mathbb{P} \circ g_k^{-1}, k=1,2$, and the space of probability measures is completely bounded on any finite set. The closedness of $H_{\Phi}^{-1}(\mu)$ follows in an obvious way from the equivalence $\operatorname{dis}(g_1, g_2) = 0 \Leftrightarrow \mathbb{P} \circ g_1^{-1} = \mathbb{P} \circ g_2^{-1}$. Thus, $H_{\Phi}^{-1}(\mu)$ is compact in the semimetric $\operatorname{dis}$. Let us prove the continuity of the mapping $\rho\ \circ : Y^\Omega \rightarrow X^\Omega$ by differently expressing the same semimetric, %Переформулируем $H_{\Phi,\rho}^{-1}(\mu) = \rho \circ H_{\Phi}^{-1}(\mu)$, определив для этого отображение $H_{\Phi}^{-1}(\mu) = \{g \models \Phi \mid \mathbb{P} \circ g^{-1} = \mu\}$. Докажем сперва компактность $H_{\Phi}^{-1}(\mu)$, вводя $\operatorname{dis}(g_1, g_2)$ аналогично $\operatorname{dis}(f_1, f_2)$. Полуметрика $\operatorname{dis}$ вполне ограниченна, так как $\operatorname{dis}(g_1, g_2) = d(\mu^Y_1, \mu^Y_2)$, где $\mu^Y_k = \mathbb{P} \circ g_k^{-1}, k=1,2$, а пространство вероятностных мер на любом конечном множестве вполне ограниченно. Замкнутость $H_{\Phi}^{-1}(\mu)$ очевидно следует из $\operatorname{dis}(g_1, g_2) = 0 \Leftrightarrow \mathbb{P} \circ g_1^{-1} = \mathbb{P} \circ g_2^{-1}$. Таким образом $H_{\Phi}^{-1}(\mu)$ компактно в полуметрике $\operatorname{dis}$. Докажем непрерывность отображения $\rho\ \circ : Y^\Omega \rightarrow X^\Omega$, выразив ту же полуметрику по-другому:
+	\begin{equation*}
+		\operatorname{dis}(f_1, f_2) = 1 - \sum_{x \in X} \min \left[\mathbb{P}(f_1^{-1}(x)), \mathbb{P}(f_2^{-1}(x))\right].
+	\end{equation*}
+	
+	Now let $f_1 = \rho \circ g_1$ and $f_2 = \rho \circ g_2$:
+	\begin{align*}
+		\operatorname{dis}(\rho \circ g_1, \rho \circ g_2) &= 1 - \sum_{x \in X} \min \left[\mathbb{P}(g_1^{-1}(\rho^{-1}(x))), \mathbb{P}(g_2^{-1}(\rho^{-1}(x)))\right] \\
+		&= 1 - \sum_{x \in X} \min \left[\sum_{y \in \rho^{-1}(x)} \mathbb{P}(g_1^{-1}(y)), \sum_{y \in \rho^{-1}(x)} \mathbb{P}(g_2^{-1}(y))\right] \\
+		&\le 1 - \sum_{x \in X} \sum_{y \in \rho^{-1}(x)} \min \left[\mathbb{P}(g_1^{-1}(y)), \mathbb{P}(g_2^{-1}(y))\right] \\
+		&= 1 - \sum_{y \in Y} \min \left[\mathbb{P}(g_1^{-1}(y)), \mathbb{P}(g_2^{-1}(y))\right] = \operatorname{dis}(g_1, g_2).
+	\end{align*}
+	
+	The mapping $\rho\ \circ$ is continuous, because $\operatorname{dis}(\rho \circ g_1, \rho \circ g_2) \le \operatorname{dis}(g_1, g_2)$. Since continuous mappings preserve compactness\cite[с.~199]{Engelking}, it follows that $H_{\Phi,\rho}^{-1}(\mu) = \rho \circ H_{\Phi}^{-1}(\mu)$ is compact in the semimetric $\operatorname{dis}$. %Отображение $\rho\ \circ$ непрерывно, поскольку $\operatorname{dis}(\rho \circ g_1, \rho \circ g_2) \le \operatorname{dis}(g_1, g_2)$. Так как непрерывные отображения сохраняют компактность\cite[с.~199]{Engelking}, $H_{\Phi,\rho}^{-1}(\mu) = \rho \circ H_{\Phi}^{-1}(\mu)$ компактно в полуметрике $\operatorname{dis}$.
+\end{proof}
+
+\begin{definition}
+	A partition $f_2 \models \Phi_2$ is called an exact image of a partition $f_1 \models \Phi_1$ (hereinafter $f_1 \precsim f_2$) if their codomains coincide ($X_1 = X_2 = X$) and $H_{\Phi_1,\rho}(f_1) \subseteq H_{\Phi_2,\rho}(f_2)$ for all refinements $\rho$ with the same codomain. The set of all exact images will be denoted in the sequel by $\widehat{\Phi}_2(f_1) = \{f_2 \models \Phi_2 \mid f_1 \precsim f_2\}$. %Разбиение $f_2 \models \Phi_2$ называется точным образом разбиения $f_1 \models \Phi_1$ (далее $f_1 \precsim f_2$), если их кодомены совпадают ($X_1 = X_2 = X$) и $H_{\Phi_1,\rho}(f_1) \subseteq H_{\Phi_2,\rho}(f_2)$ для всех измельчений $\rho$ с тем же кодоменом. Множество всех точных образов далее будем обозначать $\widehat{\Phi}_2(f_1) = \{f_2 \models \Phi_2 \mid f_1 \precsim f_2\}$.
+\end{definition}
+
+The relation $f_1 \precsim f_2$ can be understood as follows: no matter into what measurable parts we divide the components of the partition $f_1$, the corresponding components in the partition $f_2$ can always be divided into parts equal to them in measure. %Отношение $f_1 \precsim f_2$ можно понять так "--- на какие бы измеримые части мы не делили компоненты разбиения $f_1$, в разбиении $f_2$ соответствующие компоненты всегда можно разделить на равные им по мере части.
+
+\begin{remark}
+	Obviously, $f_1 \precsim f_2 \wedge f_2 \precsim f_3 \Rightarrow f_1 \precsim f_3$. %Очевидно, что $f_1 \precsim f_2 \wedge f_2 \precsim f_3 \Rightarrow f_1 \precsim f_3$.
+\end{remark}
+
+\begin{lemma} \label{lemma:up}
+	Assume that partitions $g_1 : \Omega_1 \rightarrow Y$ and $g_2 : \Omega_2 \rightarrow Y$ in correlation spaces $\Phi_1$ and $\Phi_2$ are such that $g_1 \precsim g_2$. Then $\rho \circ g_1 \precsim \rho \circ g_2$ for all refinements $\rho : Y \rightarrow X$. %Пусть в пространствах корреляции $\Phi_1$ и $\Phi_2$ разбиения $g_1 : \Omega_1 \rightarrow Y$ и $g_2 : \Omega_2 \rightarrow Y$ таковы, что $g_1 \precsim g_2$. Тогда $\rho \circ g_1 \precsim \rho \circ g_2$ для всех измельчений $\rho : Y \rightarrow X$.
+\end{lemma}
+
+\begin{proof}
+	Take any $\rho_* : Y_* \rightarrow X$ and $\mu \in H_{\Phi_1,\rho_*}(\rho \circ g_1)$. By the definition of the structure of partition, $\exists g_{1*}: \rho_* \circ g_{1*} = \rho \circ g_1, \mathbb{P}_1 \circ g_{1*}^{-1} = \mu$, and we need to prove, by the definition of the exact image, that $\exists g_{2*}: \rho_* \circ g_{2*} = \rho \circ g_2, \mathbb{P}_2 \circ g_{2*}^{-1} = \mu$. Consider a combination $g_{1+} = g_1 \diamond g_{1*}$, where $g_1 = \pi \circ g_{1+}$ and $g_{1*} = \pi_* \circ g_{1+}$. Here $g_{1+} : \Omega_1 \rightarrow Y_+, Y_+^a = Y^a \times Y_*^a, a=\overline{1,m}$. By the definition of the structure of partition, $\mathbb{P}_1 \circ g_{1+}^{-1} \in H_{\Phi_1,\pi}(g_1)$, and hence, since $g_1 \precsim g_2$, there exists a $g_{2+} : \Omega_2 \rightarrow Y_+$ such that $\mathbb{P}_1 \circ g_{1+}^{-1} = \mathbb{P}_2 \circ g_{2+}^{-1} \in H_{\Phi_2,\pi}(g_2)$. This obviously implies that $\mathbb{P}_2 \circ (\pi_* \circ g_{2+})^{-1} = \mathbb{P}_1 \circ (\pi_* \circ g_{1+})^{-1}$ as well, and hence $g_{2*} = \pi_* \circ g_{2+}$ is the desired partition. %Возьмём любые $\rho_* : Y_* \rightarrow X$ и $\mu \in H_{\Phi_1,\rho_*}(\rho \circ g_1)$. По определению структуры разбиения, $\exists g_{1*}: \rho_* \circ g_{1*} = \rho \circ g_1, \mathbb{P}_1 \circ g_{1*}^{-1} = \mu$, а доказать требуется, по определению точного образа, что $\exists g_{2*}: \rho_* \circ g_{2*} = \rho \circ g_2, \mathbb{P}_2 \circ g_{2*}^{-1} = \mu$. Рассмотрим комбинацию $g_{1+} = g_1 \diamond g_{1*}$, где $g_1 = \pi \circ g_{1+}$ и $g_{1*} = \pi_* \circ g_{1+}$. Здесь $g_{1+} : \Omega_1 \rightarrow Y_+, Y_+^a = Y^a \times Y_*^a, a=\overline{1,m}$. По определению структуры разбиения, $\mathbb{P}_1 \circ g_{1+}^{-1} \in H_{\Phi_1,\pi}(g_1)$, а значит, поскольку $g_1 \precsim g_2$, существует $g_{2+} : \Omega_2 \rightarrow Y_+$ такое, что $\mathbb{P}_1 \circ g_{1+}^{-1} = \mathbb{P}_2 \circ g_{2+}^{-1} \in H_{\Phi_2,\pi}(g_2)$, т.е. $\pi \circ g_{2+} = g_2$. Из этого с очевидностью следует, что и $\mathbb{P}_2 \circ (\pi_* \circ g_{2+})^{-1} = \mathbb{P}_1 \circ (\pi_* \circ g_{1+})^{-1}$, а значит $g_{2*} = \pi_* \circ g_{2+}$ искомое.
+\end{proof}
+
+\begin{lemma} \label{lemma:down}
+	Assume that partitions $f_1 : \Omega_1 \rightarrow X$ and $f_2 : \Omega_2 \rightarrow X$ in correlation spaces $\Phi_1$ and $\Phi_2$ are such that $f_1 \precsim f_2$. Then for each refinement $\rho : Y \rightarrow X$ and each partition $g_1 : \Omega_1 \rightarrow Y$ such that $f_1 = \rho \circ g_1$ there exists a partition $g_2 : \Omega_2 \rightarrow Y$ such that $f_2 = \rho \circ g_2$ and $g_1 \precsim g_2$. %Пусть в пространствах корреляции $\Phi_1$ и $\Phi_2$ разбиения $f_1 : \Omega_1 \rightarrow X$ и $f_2 : \Omega_2 \rightarrow X$ таковы, что $f_1 \precsim f_2$. Тогда для каждого измельчения $\rho : Y \rightarrow X$ и каждого разбиения $g_1 : \Omega_1 \rightarrow Y$ такого, что $f_1 = \rho \circ g_1$ существует разбиение $g_2 : \Omega_2 \rightarrow Y$ такое, что $f_2 = \rho \circ g_2$ и $g_1 \precsim g_2$.
+\end{lemma}
+
+\begin{proof}
+	Let us state the desired assertion as $\exists g_2 \in \widehat{\Phi}_2(g_1) : f_2 = \rho \circ g_2$ and express $\widehat{\Phi}_2$ via the structure of partitions as %Сформулируем требуемое как $\exists g_2 \in \widehat{\Phi}_2(g_1) : f_2 = \rho \circ g_2$ и выразим $\widehat{\Phi}_2$ через структуры разбиений:
+	\begin{equation*}% \label{eq:goal1}
+		\widehat{\Phi}_2(g_1) = \bigcap_{\forall Z, \xi : Z \rightarrow Y, \mu \in H_{\Phi_1,\xi}(g_1)} H_{\Phi_2,\xi}^{-1}(\mu).
+	\end{equation*}
+	
+	By Lemma \ref{lemma:tyhon} the set $\widehat{\Phi}_2(g_1)$ is the intersection of a family of compact sets. Consequently, to prove that it contains the element $g_2 : f_2 = \rho \circ g_2$, it suffices to prove that such an element is contained in the intersection of each finite subfamily of the same compact sets, %По лемме \ref{lemma:tyhon} множество $\widehat{\Phi}_2(g_1)$ является пересечением семейства компактов. Следовательно, для доказательства содержания в нём элемента $g_2 : f_2 = \rho \circ g_2$, достаточно доказать, что такой элемент содержится в пересечении каждого конечного подсемейства тех же компактов:
+	\begin{equation*}% \label{eq:goal1}
+		\exists g_{2*} \in \bigcap_{i=1}^n H_{\Phi_2,\xi_i}^{-1}(\mu_i) : f_2 = \rho \circ g_{2*},
+	\end{equation*}
+	where $\xi_i : Z_i \rightarrow Y$ are arbitrary refinements with arbitrary domains $Z_i$ and the $\mu_i \in H_{\Phi_1,\xi_i}(g_1)$ are chosen arbitrarily as well. %где $\xi_i : Z_i \rightarrow Y$ "--- произвольные измельчения с произвольными доменами $Z_i$ и $\mu_i \in H_{\Phi_1,\xi_i}(g_1)$ также выбраны произвольно.
+	
+	By the definition of the structure of partition, $\exists h_{1,i} \models \Phi_1 : g_1 = \xi_i \circ h_{1,i}, \mathbb{P} \circ h_{1,i}^{-1} = \mu_i$. Let us construct their combination $h_1 = h_{1,1} \diamond ... \diamond h_{1,n}$, where $h_{1,i} = \pi_i \circ h_1$, and denote $\xi = \xi_1 \wr ... \wr \xi_n$. By the definition of the exact mapping, $\exists h_2 \models \Phi_2 : f_2 = \rho \circ \xi \circ h_2, \mathbb{P}_1 \circ h_1^{-1} = \mathbb{P}_2 \circ h_2^{-1}$, and hence we can take $g_{2*} = \xi \circ h_2$. By construction, $f_2 = \rho \circ g_{2*}$ and $\mathbb{P}_1 \circ h_{1,i}^{-1} = \mathbb{P}_1 \circ (\pi_i \circ h_1)^{-1} = \mathbb{P}_2 \circ (\pi_i \circ h_2)^{-1} = \mathbb{P}_2 \circ h_{2,i}^{-1}$; consequently, $g_{2*}$ is the desired partition. %По определению структуры разбиения $\exists h_{1,i} \models \Phi_1 : g_1 = \xi_i \circ h_{1,i}, \mathbb{P} \circ h_{1,i}^{-1} = \mu_i$. Построим их комбинацию $h_1 = h_{1,1} \diamond ... \diamond h_{1,n}$, где $h_{1,i} = \pi_i \circ h_1$, и обозначим $\xi = \xi_1 \wr ... \wr \xi_n$. По определению точного отображения $\exists h_2 \models \Phi_2 : f_2 = \rho \circ \xi \circ h_2, \mathbb{P}_1 \circ h_1^{-1} = \mathbb{P}_2 \circ h_2^{-1}$, а значит можно взять $g_{2*} = \xi \circ h_2$. По построению $f_2 = \rho \circ g_{2*}$ и $\mathbb{P}_1 \circ h_{1,i}^{-1} = \mathbb{P}_1 \circ (\pi_i \circ h_1)^{-1} = \mathbb{P}_2 \circ (\pi_i \circ h_2)^{-1} = \mathbb{P}_2 \circ h_{2,i}^{-1}$, следовательно $g_{2*}$ "--- искомое.
+\end{proof}
+
+\begin{corollary} \label{cor:down}
+	If correlation spaces satisfy $\Phi_1 \precsim \Phi_2$, then for each partition $f_1 \models \Phi_1$ there exists an $f_2 \models \Phi_2$ such that $f_1 \precsim f_2$. %Если пространства корреляции $\Phi_1 \precsim \Phi_2$, то для каждого разбиения $f_1 \models \Phi_1$ существует $f_2 \models \Phi_2$ такое, что $f_1 \precsim f_2$.
+\end{corollary}
+
+\begin{corollary}
+	Lemmas \ref{lemma:up} and \ref{lemma:down} and Corollary \ref{cor:down} remain valid for the strict relation $f_1 \prec f_2 \equiv f_1 \precsim f_2 \cap \neg (f_1 \succsim f_2)$. %Леммы \ref{lemma:up}, \ref{lemma:down} и следствие \ref{cor:down} также верны для строгого отношения $f_1 \prec f_2 \equiv f_1 \precsim f_2 \cap \neg (f_1 \succsim f_2)$.
+\end{corollary}
+
+\begin{lemma}
+	One has $f_1 \precsim f_2 \Leftrightarrow f_1 \succsim f_2$ for any partitions of one and the same correlation space. %$f_1 \precsim f_2 \Leftrightarrow f_1 \succsim f_2$ для любых разбиений одного и того же пространства корреляции.
+\end{lemma}
+
+\begin{proof}
+	Assume the contrary: there exists an $f_1 \prec f_2$ with the codomain $X$. The trivial refinement $\theta(x) = (0, \ldots, 0), \forall x \in X$ obviously yields $\theta \circ f_1 = \theta \circ f_2$. This contradicts $\theta \circ f_1 \prec \theta \circ f_2$, which follows from Lemma \ref{lemma:up}. %Предположим обратное "--- существование $f_1 \prec f_2$ с кодоменом $X$. Тривиальное измельчение $\theta(x) = (0, \ldots, 0), \forall x \in X$ очевидно даёт $\theta \circ f_1 = \theta \circ f_2$. Это противоречит $\theta \circ f_1 \prec \theta \circ f_2$, следующему из леммы \ref{lemma:up}.
+\end{proof}
+
+\begin{corollary} \label{cor:sym}
+	One has $f_1 \precsim f_2 \Leftrightarrow f_1 \succsim f_2$ for any partitions of isomorphic correlation spaces. %$f_1 \precsim f_2 \Leftrightarrow f_1 \succsim f_2$ для любых разбиений изоморфных пространств корреляции.
+\end{corollary}
+
+\begin{proof}[Proof of the theorem on isomorphic spaces]
+	Take an arbitrary profile $\mathbf{s}_1$ of strategies in the game $\Gamma | \Phi_1$. Obviously, this profile is a partition of the correlation space $\Phi_1$. By Corollary \ref{cor:down}, there exists a partition $\mathbf{s}_2$ of the correlation space $\Phi_2$ such that $\mathbf{s}_1 \precsim \mathbf{s}_2$, and in a similar way, $\mathbf{s}_2$ is also a profile of strategies in the game $\Gamma | \Phi_2$. Let us prove the embeddings in both directions: (1) $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \subseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$ and (2) $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \supseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$ for each cabal $A_*$ of players: %Рассмотрим в игре $\Gamma | \Phi_1$ произвольный профиль стратегий $\mathbf{s}_1$. Этот профиль, очевидно, является разбиением пространства корреляции $\Phi_1$. По следствию \ref{cor:down} существует разбиение $\mathbf{s}_2$ пространства корреляции $\Phi_2$ такое, что $\mathbf{s}_1 \precsim \mathbf{s}_2$, причём, аналогично, $\mathbf{s}_2$ является ещё и профилем стратегий в игре $\Gamma | \Phi_2$. Докажем вложения в обоих направлениях: 1. $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \subseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$ и 2. $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \supseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$ для любой группы игроков $A_*$:
+	\begin{enumerate}
+		\item Consider an arbitrary profile $\mathbf{s}_{1*} \models \Phi_1$ different from $\mathbf{s}_1$ by the strategies of the cabal $A_*$. Denote $\mathbf{s}_{1+} = \mathbf{s}_1 \diamond \mathbf{s}_{1*}$, where $\mathbf{s}_1 = \pi \circ \mathbf{s}_{1+}$ and $\mathbf{s}_{1*} = \pi_* \circ \mathbf{s}_{1+}$. By the definition of exact image, we have $H_{\Phi_1,\pi}(\mathbf{s}_1) \subseteq H_{\Phi_2,\pi}(\mathbf{s}_2)$; i.e., $\exists \mathbf{s}_{2+} \models \Phi_2 : \mathbb{P}_1 \circ \mathbf{s}_{1+} = \mathbb{P}_2 \circ \mathbf{s}_{2+}, \mathbf{s}_2 = \pi \circ \mathbf{s}_{2+}$. By construction, $\mathbf{s}_{2*} = \pi_* \circ \mathbf{s}_{2+}$ is different from $\mathbf{s}_2$ by the moves of the same players that distinguish $\mathbf{s}_{1*}$ from $\mathbf{s}_1$, and $\mathbb{P}_1 \circ \mathbf{s}_{1*}^{-1} = \mathbb{P}_2 \circ \mathbf{s}_{2*}^{-1}$, and hence, in a similar way, $u^a(\mathbf{s}_{1*}) = u^a(\mathbf{s}_{2*})$. By virtue of arbitrariness of the choice of $\mathbf{s}_{1*}$, this implies that $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \subseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$. %Рассмотрим произвольный профиль $\mathbf{s}_{1*} \models \Phi_1$, отличающийся от $\mathbf{s}_1$ стратегиями группы $A_*$. Обозначим $\mathbf{s}_{1+} = \mathbf{s}_1 \diamond \mathbf{s}_{1*}$, где $\mathbf{s}_1 = \pi \circ \mathbf{s}_{1+}$ и $\mathbf{s}_{1*} = \pi_* \circ \mathbf{s}_{1+}$. По определению точного образа $H_{\Phi_1,\pi}(\mathbf{s}_1) \subseteq H_{\Phi_2,\pi}(\mathbf{s}_2)$, т.е. $\exists \mathbf{s}_{2+} \models \Phi_2 : \mathbb{P}_1 \circ \mathbf{s}_{1+} = \mathbb{P}_2 \circ \mathbf{s}_{2+}, \mathbf{s}_2 = \pi \circ \mathbf{s}_{2+}$. По построению $\mathbf{s}_{2*} = \pi_* \circ \mathbf{s}_{2+}$ отличается от $\mathbf{s}_2$ ходами тех же игроков, что отличают $\mathbf{s}_{1*}$ от $\mathbf{s}_1$, и $\mathbb{P}_1 \circ \mathbf{s}_{1*}^{-1} = \mathbb{P}_2 \circ \mathbf{s}_{2*}^{-1}$, а значит аналогичным образом $u^a(\mathbf{s}_{1*}) = u^a(\mathbf{s}_{2*})$. В силу произвольности выбора $\mathbf{s}_{1*}$ это влечёт $U_{\Gamma | \Phi_1}^{A_*}(\mathbf{s}_1) \subseteq U_{\Gamma | \Phi_2}^{A_*}(\mathbf{s}_2)$.
+		\item Since $\mathbf{s}_1 \succsim \mathbf{s}_2$ by Corollary \ref{cor:sym}, the reasoning in the previous item is applicable in both forward and backward directions. %Так как $\mathbf{s}_1 \succsim \mathbf{s}_2$ по следствию \ref{cor:sym}, рассуждения предыдущего пункта применимы и в обратном направлении.
+	\end{enumerate}
+\end{proof}
+
+\chapter{Proof of the theorem on the conspiracy spaces of the same structure}\label{app:C}
+
+To prove the theorem on the isomorphism of conspiracy spaces, we need several lemmas. %Для доказательства теоремы об изоморфизме пространств заговоров так же понадобится несколько лемм.
+
+\begin{lemma}\label{lemma:card}
+	For each countable family $\mathfrak{F}$ of sets, there exists a chain $\mathfrak{T}$ of sets such that $\sigma(\mathfrak{F}) = \sigma(\mathfrak{T})$. %Для любого счётного семейства множеств $\mathfrak{F}$ найдётся цепь множеств $\mathfrak{T}$ такая, что $\sigma(\mathfrak{F}) = \sigma(\mathfrak{T})$.
+\end{lemma}
+
+\begin{proof}
+	Let $\mathfrak{F} = \{F_1, F_2, \ldots\}$. Let us construct by induction a sequence of chains $(\mathfrak{T}_i)$ where each next chain incorporates the previous one and $\sigma(\mathfrak{T}_i) = \sigma(\{F_1, \ldots, F_i\})$. For the base case we take $\mathfrak{T}_1 = \{F_1\}$. The induction step is as follows: let $\mathfrak{T}_{i-1} = \{T_1, \ldots, T_n\}, T_1 \subset \ldots \subset T_n$, and $\sigma(\mathfrak{T}_{i-1}) = \sigma(\{F_1, \ldots, F_{i-1}\})$. We decompose the next element $\mathfrak{F}$ into disjoint disjunctions, $F_i = (F_i \cap T_1) \cup (F_i \cap T_2 \setminus T_1) \cup \ldots \cup (F_i \cap T_n \setminus T_{n-1}) \cup (F_i \setminus T_n)$. In this notation, the $j$"~th disjunction is embedded in the corresponding difference $T_j \setminus T_{j-1}$ of neighboring chain elements. Consequently, to generate it, it suffices to augment $\mathfrak{T}_{i-1}$ with the set $T_{j-} = F_i \cap T_j \cup T_{j-1}$, which preserves the chain structure, because $T_{j-1} \subseteq T_{j-} \subseteq T_j$. Thus, to produce the entire $F_i$, we set %Пусть $\mathfrak{F} = \{F_1, F_2, \ldots\}$. Построим индуктивно последовательность цепей $(\mathfrak{T}_i)$, где каждая следующая цепь включает в себя предыдущую и $\sigma(\mathfrak{T}_i) = \sigma(\{F_1, \ldots, F_i\})$. В качестве базы возьмём $\mathfrak{T}_1 = \{F_1\}$. Шаг индукции: пусть $\mathfrak{T}_{i-1} = \{T_1, \ldots, T_n\}, T_1 \subset \ldots \subset T_n$ и $\sigma(\mathfrak{T}_{i-1}) = \sigma(\{F_1, \ldots, F_{i-1}\})$. Разложим следующий элемент $\mathfrak{F}$ на непересекающиеся дизъюнкты: $F_i = (F_i \cap T_1) \cup (F_i \cap T_2 \setminus T_1) \cup \ldots \cup (F_i \cap T_n \setminus T_{n-1}) \cup (F_i \setminus T_n)$. В этой записи $j$"~й дизъюнкт вложен в соответствующую разность $T_j \setminus T_{j-1}$ соседних элементов цепи. Следовательно, для его порождения достаточно пополнить $\mathfrak{T}_{i-1}$ множеством $T_{j-} = F_i \cap T_j \cup T_{j-1}$, сохраняющим структуру цепи, поскольку $T_{j-1} \subseteq T_{j-} \subseteq T_j$. Таким образом, чтобы получить $F_i$ целиком,
+	\begin{equation*}
+		\mathfrak{T}_i = \mathfrak{T}_{i-1} \cup \left\{
+		\begin{aligned}
+			&F_i \cap T_1,\\
+			&F_i \cap T_2 \cup T_1,\\
+			&\cdots\\
+			&F_i \cap T_n \cup T_{n-1},\\
+			&F_i \cup T_n
+		\end{aligned}
+		\right\}
+	\end{equation*}
+	
+	Let us show that the limit of the sequence $(\mathfrak{T}_i)$ is the desired chain. Indeed, each element of $\sigma(\mathfrak{F})$ is a countable union of finite intersections of the sets $F_i$. Therefore, %Покажем, что предел последовательности $(\mathfrak{T}_i)$ "--- искомая цепь. В самом деле, любой элемент из $\sigma(\mathfrak{F})$ "--- это счётное объединение конечных пересечений множеств $F_i$. Поэтому
+	\begin{equation*}
+		\sigma(\mathfrak{F}) = \bigcup_{i=1}^{\infty} \sigma(\{F_1, \ldots, F_i\}) = \bigcup_{i=1}^{\infty} \sigma(\mathfrak{T}_i) = \sigma(\mathfrak{T}).
+	\end{equation*}
+\end{proof}
+
+\begin{lemma} \label{lemma:max}
+	The maximum chain of measurable sets in an atomless space generates an atomless $\sigma$"~algebra. %Максимальная цепь измеримых множеств в безатомическом пространстве порождает безатомическую $\sigma$"~алгебру.
+\end{lemma}
+
+\begin{proof}
+	Let the maximum chain $\mathfrak{T}$ of measurable sets of the atomless space $\langle \Omega, \mathfrak{B}, \mathbb{P} \rangle$ generate an algebra $\sigma(\mathfrak{T})$. Let us prove that for each $B \in \sigma(\mathfrak{T})$ of measure $\mathbb{P}(B) > 0$ there exists a $B' \in \sigma(\mathfrak{T})$ such that $B' \subset B$ and $\mathbb{P}(B) > \mathbb{P}(B') > 0$. To this end, obviously, it suffices to prove that in the chain $\mathfrak{T}$ there exists a set $T$ such that $0 < \mathbb{P}(T \cap B) < \mathbb{P}(B)$. Consider the sets %Пусть максимальная цепь $\mathfrak{T}$ измеримых множеств безатомического пространства $\langle \Omega, \mathfrak{B}, \mathbb{P} \rangle$ порождает алгебру $\sigma(\mathfrak{T})$. Докажем, что для любого $B \in \sigma(\mathfrak{T})$ меры $\mathbb{P}(B) > 0$ найдётся $B' \in \sigma(\mathfrak{T})$ такое, что $B' \subset B$ и $\mathbb{P}(B) > \mathbb{P}(B') > 0$. Для этого, очевидно, достаточно доказать, что в цепи $\mathfrak{T}$ найдётся множество $T$ такое, что $0 < \mathbb{P}(T \cap B) < \mathbb{P}(B)$. Рассмотрим множества
+	\begin{equation*}
+		\underline{T} = \bigcup_{T_- \in \mathfrak{T} : \mathbb{P}(T_- \cap B) = 0} T_- \quad\text{и}\quad \overline{T} = \bigcap_{T_+ \in \mathfrak{T} : \mathbb{P}(T_+ \cap B) = \mathbb{P}(B)} T_+,
+	\end{equation*}
+	which are nested $\underline{T} \subset \overline{T}$ by construction, so that $\mathbb{P}(\overline{T}) - \mathbb{P}(\underline{T}) \ge \mathbb{P}(B)$. Since the chain $\mathfrak{T}$ is maximal in the atomless space, it follows that there exists a $T_0 \in \mathfrak{T}$ such that $\underline{T} \subset T_0 \subset \overline{T}$. Since $\underline{T} \subset T_0 \Rightarrow \mathbb{P}(T_0 \cap B) > 0$ and $T_0 \subset \overline{T} \Rightarrow \mathbb{P}(T_0 \cap B) < \mathbb{P}(B)$, we conclude that $T_0$ is the desired set. %по построению вложенные $\underline{T} \subset \overline{T}$ так, что $\mathbb{P}(\overline{T}) - \mathbb{P}(\underline{T}) \ge \mathbb{P}(B)$. Поскольку цепь $\mathfrak{T}$ максимальна в безатомическом пространстве, существует $T_0 \in \mathfrak{T}$ такое, что $\underline{T} \subset T_0 \subset \overline{T}$. Так как $\underline{T} \subset T_0 \Rightarrow \mathbb{P}(T_0 \cap B) > 0$ и $T_0 \subset \overline{T} \Rightarrow \mathbb{P}(T_0 \cap B) < \mathbb{P}(B)$, значит $T_0$ искомое.
+\end{proof}
+
+\begin{definition}
+	For any families of measurable sets $\mathfrak{T} \subseteq 2^\Omega$ and measures $\mathbb{P} : \mathfrak{T} \rightarrow \mathbb{R}_{\ge 0}$, we define a mapping $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle : \Omega \rightarrow \mathbb{R}_{\ge 0}$ referred to as the least measure of inclusion and calculated by the formula $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle(\omega) = \inf\{\mathbb{P}(T) \mid \omega \in T \in \mathfrak{T}\}$. %Для любых семейств измеримых множеств $\mathfrak{T} \subseteq 2^\Omega$ и мер $\mathbb{P} : \mathfrak{T} \rightarrow \mathbb{R}_{\ge 0}$ определим отображение $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle : \Omega \rightarrow \mathbb{R}_{\ge 0}$, называемое наименьшей мерой включения и вычисляемое по формуле $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle(\omega) = \inf\{\mathbb{P}(T) \mid \omega \in T \in \mathfrak{T}\}$.
+\end{definition}
+
+\begin{lemma}
+	If $\mathfrak{T} \subset 2^\Omega$ is a chain of sets that generates an atomless $\sigma$"~algebra, then $\mathbb{P} \circ \operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle^{-1}$ coincides with the Lebesgue measure on the interval $[0, \mathbb{P}(\Omega)]$. %Если $\mathfrak{T} \subset 2^\Omega$ "--- цепь множеств, порождающая безатомическую $\sigma$"~алгебру, то $\mathbb{P} \circ \operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle^{-1}$ совпадает с мерой Лебега на отрезке $[0, \mathbb{P}(\Omega)]$.
+\end{lemma}
+
+\begin{proof}
+	Since $\mathfrak{T}$ is a chain, we have $\omega \in T \Leftrightarrow \operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle(\omega) \le \mathbb{P}(T), \forall \omega \in \Omega, T \in \mathfrak{T}$. Since, in addition, $\mathfrak{T}$ generates an atomless $\sigma$"~algebra, we conclude that for each $0 < t < \mathbb{P}(\Omega)$ there exists a $T \in \mathfrak{T}$ such that $\mathbb{P}(T) = t$. Consequently, the function $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle$ maps the sets $T \in \mathfrak{T}$ onto the intervals $[0, \mathbb{P}(T)]$, which obviously implies the desired assertion. %Поскольку $\mathfrak{T}$ "--- цепь, $\omega \in T \Leftrightarrow \operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle(\omega) \le \mathbb{P}(T), \forall \omega \in \Omega, T \in \mathfrak{T}$. Так как $\mathfrak{T}$ вдобавок порождает безатомическую $\sigma$"~алгебру, то для каждого $0 < t < \mathbb{P}(\Omega)$ найдётся $T \in \mathfrak{T}$ такое, что $\mathbb{P}(T) = t$. Следовательно, функция $\operatorname{mim}\langle\mathfrak{T}, \mathbb{P}\rangle$ отображает множества $T \in \mathfrak{T}$ на отрезки $[0, \mathbb{P}(T)]$, что очевидно влечёт цель доказательства.
+\end{proof}
+
+\begin{lemma} \label{lemma:consp}
+	Let $\langle \Omega, \mathfrak{B}, \mathbb{P} \rangle$ atomless probability space with a $\sigma$"~algebra decomposable into $n$ atomless components $\mathfrak{B} = \sigma(\mathfrak{B}_1 \cup \ldots \cup \mathfrak{B}_n)$ such that all events from different components are jointly independent; i.e., $\mathbb{P}(B_1 \cap \ldots \cap B_n) = \mathbb{P}(B_1) \ldots \mathbb{P}(B_n)$ for any $B_i \in \mathfrak{B}_i, i=\overline{1,n}$. Then any measurable function $f : \Omega \rightarrow X$ with a finite codomain is representable in the form $f = \varphi \circ \mathfrak{r}$, where $\mathfrak{r} : \Omega \rightarrow [0,1]^n$ is such that $\mathbb{P} \circ \mathfrak{r}^{-1}$ coincides with the Lebesgue measure and $\varphi : [0,1]^n \rightarrow X$ is a Borel function. %Пусть $\langle \Omega, \mathfrak{B}, \mathbb{P} \rangle$ "--- любое безатомическое вероятностное пространство с $\sigma$"~алгеброй, разложимой на $n$ безатомических компонент $\mathfrak{B} = \sigma(\mathfrak{B}_1 \cup \ldots \cup \mathfrak{B}_n)$ таких, что все события из разных компонент совместно независимы, т.е. $\mathbb{P}(B_1 \cap \ldots \cap B_n) = \mathbb{P}(B_1) \ldots \mathbb{P}(B_n)$ для любых $B_i \in \mathfrak{B}_i, i=\overline{1,n}$. Тогда любая измеримая функция с конечным кодоменом $f : \Omega \rightarrow X$ может быть представлена в виде $f = \varphi \circ \mathfrak{r}$, где $\mathfrak{r} : \Omega \rightarrow [0,1]^n$ такова, что $\mathbb{P} \circ \mathfrak{r}^{-1}$ совпадает с мерой Лебега, а $\varphi : [0,1]^n \rightarrow X$ "--- борелевская.
+\end{lemma}
+
+\begin{proof}
+	Consider the inverse function $f^{-1} : X \rightarrow \mathfrak{B}$. By virtue of the decomposability of $\mathfrak{B}$, it can be represented as the limit of a sequence of conjunctions, %Рассмотрим обратную функцию $f^{-1} : X \rightarrow \mathfrak{B}$. В силу разложимости $\mathfrak{B}$ её можно представить как предел последовательности конъюнкций:
+	\begin{equation*}
+		f^{-1}(x) = \bigcup_{j=1}^\infty F_1^j(x) \cap \ldots \cap F_n^j(x), \; F_i^j : X \rightarrow \mathfrak{B}_i.
+	\end{equation*}
+	
+	Consider the families $\mathfrak{F}_i = \{F_i^j(x) \mid j \in \mathbb{N}, x \in X\}$ of sets and note that $f$ is measurable according to $\sigma(\mathfrak{F}_1 \cup \ldots \cup \mathfrak{F}_n)$. By Lemma \ref{lemma:card}, there exist chains of sets $\mathfrak{T}_i \subset \mathfrak{B}_i$ such that $\sigma(\mathfrak{F}_i) = \sigma(\mathfrak{T}_i)$. According to the Hausdorff maximum principle, each such chain is embedded in a maximal chain $\overline{\mathfrak{T}}_i \subset \mathfrak{B}_i$ generating an atomless $\sigma$"~algebra by Lemma \ref{lemma:max}. Let us construct the desired $\mathfrak{r} = (\operatorname{mim}\langle\overline{\mathfrak{T}}_1, \mathbb{P}\rangle, \ldots, \operatorname{mim}\langle\overline{\mathfrak{T}}_n, \mathbb{P}\rangle)$ and $\varphi = f \circ \mathfrak{r}^{-1}$. The necessary properties are observed by construction. %Обозначим семейства множеств $\mathfrak{F}_i = \{F_i^j(x) \mid j \in \mathbb{N}, x \in X\}$ и заметим, что $f$ измерима по $\sigma(\mathfrak{F}_1 \cup \ldots \cup \mathfrak{F}_n)$. По лемме \ref{lemma:card}, существуют цепи множеств $\mathfrak{T}_i \subset \mathfrak{B}_i$ такие, что $\sigma(\mathfrak{F}_i) = \sigma(\mathfrak{T}_i)$. Согласно принципу максимума Хаусдорфа каждая такая цепь вложена в максимальную цепь $\overline{\mathfrak{T}}_i \subset \mathfrak{B}_i$, порождающую безатомическую $\sigma$"~алгебру по лемме \ref{lemma:max}. Построим искомые функции: $\mathfrak{r} = (\operatorname{mim}\langle\overline{\mathfrak{T}}_1, \mathbb{P}\rangle, \ldots, \operatorname{mim}\langle\overline{\mathfrak{T}}_n, \mathbb{P}\rangle)$ и $\varphi = f \circ \mathfrak{r}^{-1}$. Необходимые свойства соблюдаются по построению.
+\end{proof}
+
+	\begin{proof}[Proof of theorem \ref{the:struct}]
+	Let us apply the previous lemma to an arbitrary conspiracy space $\Phi_1$ of the structure $\mathfrak{A} = \{A_1, \ldots, A_n\}$ using the secrets of the cabals of conspirators for the respective components of the decomposition $\mathfrak{B}_1, \ldots, \mathfrak{B}_n$ of the $\sigma$"~algebra. This yields a decomposition $f_1 = \varphi \circ \mathfrak{r}$ for each partition $f_1 \models \Phi_1$. In any other conspiracy space $\Phi_2$ of the same structure $\mathfrak{A}$, the relevant partition $f_2 \models \Phi_2$ is constructed in a similar fashion as $f_2 = \varphi \circ \mathfrak{u}$. Here $\varphi$ is the same, and $\mathfrak{u} = (\operatorname{mim}\langle\mathfrak{W}_1, \mathbb{P}_2\rangle, \ldots, \operatorname{mim}\langle\mathfrak{W}_n, \mathbb{P}_2\rangle)$, where the $\mathfrak{W}_i$ are arbitrary maximal chains embedded in the $\sigma$"~algebra of the corresponding secrets of the conspiracy space $\Phi_2$. Since both $\mathbb{P}_1 \circ \mathfrak{r}^{-1}$ and $\mathbb{P}_2 \circ \mathfrak{u}^{-1}$ coincide with the Lebesgue measure, we conclude that $\mathbb{P}_1 \circ f_1^{-1} = \mathbb{P}_2 \circ f_2^{-1}$ as well, and this completes the proof of the theorem. %Применим лемму \ref{lemma:consp} к произвольному пространству заговоров $\Phi_1$ структуры $\mathfrak{A} = \{A_1, \ldots, A_n\}$, используя в качестве компонент разложения $\mathfrak{B}_1, \ldots, \mathfrak{B}_n$ $\sigma$"~алгебры тайны соответствующих групп заговорщиков. Это даёт для любого разбиения $f_1 \models \Phi_1$ разложение $f_1 = \varphi \circ \mathfrak{r}$. В любом другом пространстве заговоров $\Phi_2$ той же структуры $\mathfrak{A}$ соответствующее разбиение $f_2 \models \Phi_2$ построим похожим образом: $f_2 = \varphi \circ \mathfrak{u}$. Здесь $\varphi$ то же самое, а $\mathfrak{u} = (\operatorname{mim}\langle\mathfrak{W}_1, \mathbb{P}_2\rangle, \ldots, \operatorname{mim}\langle\mathfrak{W}_n, \mathbb{P}_2\rangle)$, где $\mathfrak{W}_i$ - произвольные максимальные цепи, вложенные в $\sigma$"~алгебры соответствующих тайн пространства заговоров $\Phi_2$. Поскольку и $\mathbb{P}_1 \circ \mathfrak{r}^{-1}$, и $\mathbb{P}_2 \circ \mathfrak{u}^{-1}$ обе совпадают с мерой Лебега, то и $\mathbb{P}_1 \circ f_1^{-1} = \mathbb{P}_2 \circ f_2^{-1}$, а значит теорема доказана.
+\end{proof}
+
+\chapter{Card game <<Tesseract>>}\label{app:D}
+
+\section{Rules}\label{app:D1}
+
+\begin{figure}[ht]
+	\centerfloat{
+		\ifdefmacro{\tikzsetnextfilename}{\tikzsetnextfilename{tikz_tess_compiled}}{}
+		\begin{tikzpicture}[scale=4]
+			\path (0,{sqrt(1+1/sqrt(2))}) node(As) {Т$\spadesuit$};
+			\path ({sqrt(1+1/sqrt(2))/sqrt(2)},{sqrt(1+1/sqrt(2))/sqrt(2)}) node(Js) {В$\spadesuit$};
+			\path ({sqrt(1+1/sqrt(2))},0) node(Jh) {В$\heartsuit$};
+			\path ({sqrt(1+1/sqrt(2))/sqrt(2)},{-sqrt(1+1/sqrt(2))/sqrt(2)}) node(Jd) {В$\diamondsuit$};
+			\path (0,{-sqrt(1+1/sqrt(2))}) node(Qd) {Д$\diamondsuit$};
+			\path ({-sqrt(1+1/sqrt(2))/sqrt(2)},{-sqrt(1+1/sqrt(2))/sqrt(2)}) node(Kd) {К$\diamondsuit$};
+			\path ({-sqrt(1+1/sqrt(2))},0) node(Kc) {К$\clubsuit$};
+			\path ({-sqrt(1+1/sqrt(2))/sqrt(2)},{sqrt(1+1/sqrt(2))/sqrt(2)}) node(Ks) {К$\spadesuit$};
+			\path (0,{sqrt(1-1/sqrt(2))}) node(Qs) {Д$\spadesuit$};
+			\path ({sqrt(1-1/sqrt(2))/sqrt(2)},{sqrt(1-1/sqrt(2))/sqrt(2)}) node(Ah) {Т$\heartsuit$};
+			\path ({sqrt(1-1/sqrt(2))},0) node(Jc) {В$\clubsuit$};
+			\path ({sqrt(1-1/sqrt(2))/sqrt(2)},{-sqrt(1-1/sqrt(2))/sqrt(2)}) node(Qh) {Д$\heartsuit$};
+			\path (0,{-sqrt(1-1/sqrt(2))}) node(Ad) {Т$\diamondsuit$};
+			\path ({-sqrt(1-1/sqrt(2))/sqrt(2)},{-sqrt(1-1/sqrt(2))/sqrt(2)}) node(Qc) {Д$\clubsuit$};
+			\path ({-sqrt(1-1/sqrt(2))},0) node(Kh) {К$\heartsuit$};
+			\path ({-sqrt(1-1/sqrt(2))/sqrt(2)},{sqrt(1-1/sqrt(2))/sqrt(2)}) node(Ac) {Т$\clubsuit$};
+			\draw[double] (As) -- (Ks) (Ah) -- (Kh) (Ad) -- (Kd) (Ac) -- (Kc) (Qs) -- (Js) (Qh) -- (Jh) (Qd) -- (Jd) (Qc) -- (Jc);
+			\draw[dashed] (As) -- (Ac) (Ks) -- (Kc) (Qs) -- (Qc) (Js) -- (Jc) (Ah) -- (Ad) (Kh) -- (Kd) (Qh) -- (Qd) (Jh) -- (Jd);
+			\draw[dotted] (As) -- (Ah) (Ks) -- (Kh) (Qs) -- (Qh) (Js) -- (Jh) (Ad) -- (Ac) (Kd) -- (Kc) (Qd) -- (Qc) (Jd) -- (Jc);
+			\draw[solid] (As) -- (Js) (Ah) -- (Jh) (Ad) -- (Jd) (Ac) -- (Jc) (Ks) -- (Qs) (Kh) -- (Qh) (Kd) -- (Qd) (Kc) -- (Qc);
+		\end{tikzpicture}
+		\legend{}
+		\caption[Tesseract of matching cards]{Tesseract of matching cards}\label{fig:tess}
+	}
+\end{figure}
+
+To play Tesseract you need: %Для игры в тессеракт необходимы:
+\begin{itemize}
+	\item $4$ player; %$4$ игрока;
+	\item preference deck ($4$ suit with values from seven to ace, total $32$ cards); %преферансная колода ($4$ масти с достоинствами от семёрки до туза, всего $32$ карты);
+	\item chips or other method of scoring; %фишки или иной способ подсчёта очков;
+	\item for players just getting to know the game, a printout of the diagram in fig.~\ref{fig:tess} may be helpful at first. %игрокам, только знакомящимся с игрой, поначалу может быть полезна распечатка диаграммы на рис.~\ref{fig:tess}.
+\end{itemize}
+
+The game consists of any (pre-negotiated and/or upon reaching the win/loss limit) number of independent dealings. The result of one dealing may be the redistribution among the players (with zero sum) of a certain number of fixed bets. No player can lose or win more than 3 bets per dealing. %Игра состоит из любого (заранее обговорённого и/или по достижении лимита выигрышей/проигрышей) числа независимых раздач. Результатом одной раздачи может стать перераспределение между игроками (с нулевой суммой) некоторого количества фиксированных ставок. Ни один игрок не может проиграть или выиграть более 3 ставок за раздачу.
+
+The dealing begins by dividing the deck into court (В, Д, К, Т) and minor (7, 8, 9, 10) cards.\footnote{You can shuffle and deal the entire deck without dividing it, 8 cards face up per player, however in this case, it won't be uncommon for hands to significantly favor some players at the expense of others. For example, if a hand of only minor cards is dealt to someone, then he will effectively turn into a dummy who does not have the ability to influence the outcome of the game at all. A player with one court card in his hand, while having the opportunity to influence the game situation once per play, will not be able to make meaningful moves in secret from other players, which will make his strategy more predictable, etc. However, if the participants are ready to put up with an increase in the element of chance through the game, then such a <<lazy>> way of dealing is not forbidden.} The court deck is shuffled and dealt to the players openly (face up), 4 cards each. The minor deck is dealt without mixing (here the suits and ranks do not matter), also 4 cards per player. After everyone has seen the spread, each player picks up the court and minor cards dealt to him, combining them in a closed hand. After that, the playout begins, consisting of four rounds. %Раздача начинается с деления колоды на старшие (В, Д, К, Т) и младшие (7, 8, 9, 10) карты.\footnote{Можно перемешивать и раздавать колоду целиком, не разделяя, по 8 карт каждому лицом вверх, однако в таком случае будут нередко случаться расклады, существенно благоволящие одним игрокам в ущерб другим. Например, если кому-либо будет сдана рука из одних только младших карт, то он фактически превратится в болванчика, не имеющего возможности влиять на исход игры вообще. Игрок с одной старшей картой в руке, хотя и будет иметь возможность один раз за розыгрыш повлиять на игровую ситуацию, не сможет совершать тайных от других игроков осмысленных ходов, что сделает его стратегию более предсказуемой, и т.д.. Впрочем, если участники готовы мириться с усилением элемента случайности в игре, то подобный <<ленивый>> способ раздачи использовать не возбраняется.} Старшая колода перемешивается и сдаётся игрокам в открытую (лицом вверх), по 4 карты каждому. Младшая колода раздаётся без перемешивания (тут масти и достоинства не имеют значения), также по 4 карты на игрока. После того как все увидели расклад, каждый игрок подбирает сданные ему старшие и младшие карты, объединяя их в закрытой руке. После этого начинается розыгрыш, состоящий из четырёх кругов.
+
+During each round of turns, players must perform two actions in no particular order: a) play one card in front of them face down and b) discard one card into the common discard pile face down. After everyone has finished, the played (but not discarded) cards are revealed. At the end of all four rounds, the players have no cards left in their hands, 4 cards played face up in front of each, and the dealing result is summed up. Each player must count the upturned unpaired cards and, accordingly, his penalty. %В течение каждого круга ходов игроки должны в произвольном порядке совершить по два действия: а) сыграть одну карту перед собой рубашкой вверх и б) сбросить одну карту в общую стопку сброса рубашкой вверх. После того как все закончат, сыгранные (но не сброшенные) карты раскрываются. По завершении всех четырёх кругов у игроков не остаётся карт в руках, перед каждым лежат лицом вверх по 4 сыгранные карты, и подводится итог розыгрыша. Каждый игрок должен сосчитать вскрытые непарные карты и, соответственно, свой штраф.
+
+From the each player's point of view, 16 court cards are divided into 8 pairs in their own way. The splitting method is determined depending on its position number at the table: %С точки зрения каждого игрока 16 старших карт по своему разбиваются на 8 пар. Способ разбиения определяется в зависимости от его порядкового номера за столом:
+\begin{enumerate}
+	\item matching jacks and queens of the same suit, matching kings and aces of the same suit; %парны валеты и дамы одной масти, парны короли и тузы одной масти;
+	\item matching clubs and spades of the same rank, matching hearts and diamonds of the same rank; %парны трефы и пики одного достоинства, парны червы и бубны одного достоинства;
+	\item matching spades and hearts of the same rank, matching diamonds and clubs of the same rank; %парны пики и червы одного достоинства, парны бубны и трефы одного достоинства;
+	\item matching jacks and aces of the same suit, matching queens and kings of the same suit. %парны валеты и тузы одной масти, парны дамы и короли одной масти.
+\end{enumerate}
+
+On fig. \ref{fig:tess} the pairing of cards for different players is indicated by lines of different hatching. Notably, it is easy to see that 16 court cards can be assigned to the vertices of a four"~dimensional hypercube (hence the name <<Tesseract>>) in such a way that for each player the pairing relation corresponds to its own set of parallel edges. %На рис. \ref{fig:tess} парность карт для разных игроков обозначена линиями различной штриховки. При этом легко заметить, что 16"~ти старшим картам можно поставить в соответствие вершины четырёх"~мерного гиперкуба (отсюда название <<Тессеракт>>) таким образом, что для каждого игрока отношение парности соответствует своему набору параллельных рёбер.
+
+In the context of calculating penalties, an unpaired card for a player is the upturned court card that, according to his rules, does not form a pair with other upturned cards. The player's penalty is calculated according to the formula $\left|2l-8\right|$, where $l$ is the number of unpaired cards from his point of view. A player who wants to avoid a penalty should play in such a way that exactly $4$ unpaired cards has been played by the end of the dealing for him, since each card of deviation up or down increases his penalty by $2$. The average penalty is defined as the arithmetic average of the penalties of all players. At the final settlement, players whose penalty is greater than the average deposit chips into the bank equal to the difference between their penalty and the average. On the contrary, the players whose penalty is less than the average take the difference between the average and their penalties from the bank. %В контексте подсчёта штрафов непарной картой для игрока считается вскрытая старшая карта, не образующая по его правилам пары с другими вскрытыми картами. Штраф игрока считается по формуле $\left|2l-8\right|$, где $l$ "--- количество непарных с его точки зрения карт. Желающему избежать штрафа игроку следует ходить таким образом, чтобы к концу розыгрыша было сыграно ровно $4$ непарные для него карты, так как каждая карта отклонения в большую или меньшую сторону увеличивает его штраф на $2$. Средний штраф определяется как среднее арифметическое штрафов всех игроков. При окончательном расчёте игроки, чей штраф больше среднего, вносят в банк фишки кол"~ом равным разнице между своим штрафом и средним. Те же игроки, чей штраф меньше среднего, наоборот, забирают из банка разницу между средним и своим штрафами.
+
+\section{Dealing example}\label{app:D2}
+
+Since minor cards are not used in calculating penalties, the initial hands are determined by the layout of court cards (table \ref{tab:cards1}). The further process of playing can be recorded as it is shown in the table \ref{tab:cards2}. %Поскольку младшие карты не используются при подсчёте штрафов, начальная раздача определяется раскладом старших карт (таблица \ref{tab:cards1}). Дальнейший процесс разыгрывания можно записывать так, как это демонстрируется в таблице \ref{tab:cards2}.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Dealing A}
+	\label{tab:cards1}
+	\begin{SingleSpace}
+		\begin{tabular}{|c|cccc|}
+			\hline
+			Player & \multicolumn{4}{c|}{Hand} \\
+			\hline
+			$1$ & В$\diamondsuit$ & Д$\clubsuit$ & К$\clubsuit$ & Т$\clubsuit$ \\
+			$2$ & К$\spadesuit$ & К$\heartsuit$ & К$\diamondsuit$ & В$\clubsuit$ \\
+			$3$ & Д$\spadesuit$ & В$\heartsuit$ & Д$\heartsuit$ & Д$\diamondsuit$ \\
+			$4$ & В$\spadesuit$ & Т$\spadesuit$ & Т$\heartsuit$ & Т$\diamondsuit$ \\
+			\hline
+		\end{tabular}
+	\end{SingleSpace}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Playout A1 of dealing А}
+	\label{tab:cards2}
+	\begin{SingleSpace}
+		\newcolumntype{a}{>{\centering}m{1.5em}}
+		\newcolumntype{d}{>{\centering\columncolor{lightgray}}m{1.5em}}
+		\begin{tabular}{|c|ad|ad|ad|ad|}
+			\hline
+			Player & \multicolumn{8}{c|}{Rounds} \\
+			\hline
+			& \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{4} \\
+			$1$ & Д$\clubsuit$ & Т$\clubsuit$ & & & & К$\clubsuit$ & & В$\diamondsuit$ \tabularnewline
+			$2$ & К$\spadesuit$ & & & В$\clubsuit$ & & К$\heartsuit$ & К$\diamondsuit$ & \tabularnewline
+			$3$ & В$\heartsuit$ & & Д$\diamondsuit$ & & & Д$\heartsuit$ & Д$\spadesuit$ & \tabularnewline
+			$4$ & Т$\heartsuit$ & & Т$\diamondsuit$ & & Т$\spadesuit$ & & & В$\spadesuit$ \tabularnewline
+			\hline
+		\end{tabular}
+	\end{SingleSpace}
+\end{table}
+
+Here, again, the minor cards are not shown due to their indistinguishability by the rules, the played court cards are shown on the white background, and the discarded ones are shown on the gray. For example, the first player on the first round played the queen of clubs and discarded the ace clubs, on the second round played and discarded the minor cards, etc.. Let's count the unpaired cards from the each player's point of view, writing in brackets the corresponding discarded paired card: %Здесь, опять же, младшие карты не показаны в силу их неразличимости с точки зрения правил, на белом фоне показаны сыгранные старшие карты, а на сером "--- сброшенные. Например, первый игрок на первом круге сыграл даму треф и сбросил туза треф, на втором круге сыграл и сбросил по младшей карте и т.д.. Посчитаем непарные карты с точки зрения каждого из игроков, записывая в скобках соответствующую сброшенную парную карту:
+
+\begin{enumerate}
+	\item Д$\clubsuit$ (В$\clubsuit$), В$\heartsuit$ (Д$\heartsuit$), Т$\heartsuit$ (К$\heartsuit$), Д$\diamondsuit$ (В$\diamondsuit$), Д$\spadesuit$ (В$\spadesuit$)
+	\item К$\spadesuit$ (К$\clubsuit$), В$\heartsuit$ (В$\diamondsuit$), Д$\diamondsuit$ (Д$\heartsuit$), Т$\spadesuit$ (Т$\clubsuit$), К$\diamondsuit$ (К$\heartsuit$)
+	\item К$\spadesuit$ (К$\heartsuit$), В$\heartsuit$ (В$\spadesuit$), Т$\diamondsuit$ (Т$\clubsuit$), К$\diamondsuit$ (К$\clubsuit$), Д$\spadesuit$ (Д$\heartsuit$)
+	\item Д$\clubsuit$ (К$\clubsuit$), Т$\diamondsuit$ (В$\diamondsuit$), Т$\spadesuit$ (В$\spadesuit$)
+\end{enumerate}
+
+The first player has 4 of 9 upturned cards that form pairs: K$\diamondsuit$"~T$\diamondsuit$ and K$\spadesuit$"~T$\spadesuit$. There are 5 unpaired cards left, which corresponds to $\left|2\cdot5-8\right| = 2$ penalty points. By repeating the same procedure for the rest of the players, you can complete the table with a penalty column. %У первого игрока из 9 вскрытых карт 4 образуют пары: К$\diamondsuit$"~Т$\diamondsuit$ и К$\spadesuit$"~Т$\spadesuit$. Остаются 5 непарных карт, что соответствует $\left|2\cdot5-8\right| = 2$ очкам штрафа. Повторив ту же процедуру для остальных игроков, можно дополнить таблицу столбцом штрафов.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Penalties of playout А1}
+	\label{tab:cards3}
+	\begin{SingleSpace}
+		\newcolumntype{a}{>{\centering}m{1.5em}}
+		\newcolumntype{d}{>{\centering\columncolor{lightgray}}m{1.5em}}
+		\begin{tabular}{|c|ad|ad|ad|ad|c|}
+			\hline
+			Player & \multicolumn{8}{c|}{Rounds} & Penalty \\
+			\hline
+			& \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{4} & \\
+			$1$ & Д$\clubsuit$ & Т$\clubsuit$ & & & & К$\clubsuit$ & & В$\diamondsuit$ & 2 \\
+			$2$ & К$\spadesuit$ & & & В$\clubsuit$ & & К$\heartsuit$ & К$\diamondsuit$ & & 2 \\
+			$3$ & В$\heartsuit$ & & Д$\diamondsuit$ & & & Д$\heartsuit$ & Д$\spadesuit$ & & 2 \\
+			$4$ & Т$\heartsuit$ & & Т$\diamondsuit$ & & Т$\spadesuit$ & & & В$\spadesuit$ & 2 \\
+			\hline
+		\end{tabular}
+	\end{SingleSpace}
+\end{table}
+
+Penalties of all players are equal, which means no one pays anyone. %Штрафы всех игроков равны, а значит никто никому не платит.
+
+\section{Possible outcomes and simplest strategies}\label{app:D3}
+
+It is interesting that at any moment of the game the penalties of each two participants are either equal or differ by 4. This is easily confirmed by enumeration of $2^{16}$ possible playout outcomes, which allows only 4 distinguishable classes of situations in relation with payoffs: %Интересно то, что в любой момент игры штрафы каждых двух участников либо равны, либо различаются на 4. Это несложным образом подтверждается перебором $2^{16}$ всевозможных исходов розыгрыша, что с точки зрения выплат оставляет всего 4 различимых класса ситуаций:
+\begin{enumerate}
+	\item the penalties of all players are equal, there are no payments; %штрафы всех игроков равны, выплат нет;
+	\item the penalty of one of the players is 4 more than the other three, he pays each of them 1 chip; %штраф одного из игроков на 4 больше, чем у остальных троих, он платит каждому из них по 1 фишке;
+	\item the penalties of the two pairs of players differ by 4, each of the losers pays 1 chip to each of the winners; %штрафы двух пар игроков различаются на 4, каждый из проигравших платит по 1 фишке каждому из победителей;
+	\item the penalty of one of the players is 4 less than the other three, they pay him 1 chip each. %штраф одного из игроков на 4 меньше, чем у остальных троих, они платят ему по 1 фишке каждый.
+\end{enumerate}
+
+Since every time a court card is played, the opponents of the player who upturned it reduce their measure of ignorance about the remaining contents of his hand, it is tactically more reasonable to play court cards after the minor ones. In addition, it is easy to verify that to get a representative of any of the above classes as an outcome of the playout, no more than 4 cards played by all players are sufficient. Thus, the following strategy in the <<Tesseract>> can be called basic "--- during the first three turns, only minor cards are played, and the only court card is played on the last round. Even if only beginners are sitting at the table, limited to basic strategies, then their playout may end with an outcome belonging to any of the above classes. %Поскольку каждый раз, когда играется старшая карта, соперники раскрывшего её игрока уменьшают меру своего незнания относительно оставшегося содержимого его руки, то тактически разумнее играть старшие карты после младших. Кроме того, легко убедиться, что для получения в качестве исхода розыгрыша представителя любого из вышеперечисленных классов достаточно не более 4 сыгранных всеми игроками карт. Таким образом, следующую стратегию в <<Тессеракте>> можно назвать базовой "--- на протяжении первых трёх ходов играются только младшие карты, а единственная старшая играется на последнем круге. Даже если за столом сидят только новички, ограничивающиеся базовыми стратегиями, то их розыгрыш может закончится исходом, принадлежащим к любому из вышеперечисленных классов.
+
+In fact, within the framework of basic strategies, a <<Tesseract>> can be modeled as a normal form game "--- if each participant knows that the others will not play court cards until the last round, then what happens turns into a classic $5 \times 5 \times 5 \times 5$ matrix game. It may be tempting to subject <<Tesseract>> in basic strategies to the ordinary Nash equilibria analysis, but in this case we immediately find ourselves in a dead end "--- the typical dealing has too many solutions even in pure strategies. For example, the dealing from the table \ref{tab:cards1} has 21 Nash equilibria, and each strategy of each player participates in at least one of them. %По сути в рамках базовых стратегий в качестве модели <<Тессеракта>> может выступать игра в нормальной форме "--- если каждый участник знает, что остальные не будут играть старшие карты до последнего круга, то происходящее превращается в классическую матричную игру размером $5 \times 5 \times 5 \times 5$. Может возникнуть искушение подвергнуть <<Тессеракт>> в базовых стратегиях анализу на обычные равновесия по Нэшу, однако при этом мы сразу оказываемся в тупике "--- у типичного расклада оказывается слишком много решений даже в чистых стратегиях. К примеру, расклад из таблицы \ref{tab:cards1} имеет 21 равновесие по Нэшу, причём каждая стратегия каждого игрока участвует хотя бы в одном из них.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Nash equilibria in the basic strategies of layout A}
+	\label{tab:cards4}
+	\begin{SingleSpace}
+		\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+		\newcolumntype{R}{>{\PreserveBackslash\raggedleft}p{0.5cm}}
+		\newcolumntype{L}{>{\PreserveBackslash\raggedright}p{0.5cm}}
+%		\footnotesize
+		\begin{tabular}{|LR|LR|LR|LR|c|LR|LR|LR|RL|}
+			\cline{1-8} \cline{10-17}
+			$s^1$ & & $s^2$ & & $s^3$ & & $s^4$ & & & $s^1$ & & $s^2$ & & $s^3$ & & $s^4$ & \\
+			& $\mkern-18mu u^1(s)$ & & $\mkern-18mu u^2(s)$ & & $\mkern-18mu u^3(s)$ & & $\mkern-18mu u^4(s)$ & & & $\mkern-18mu u^1(s)$ & & $\mkern-18mu u^2(s)$ & & $\mkern-18mu u^3(s)$ & & $\mkern-18mu u^4(s)$ \\
+			\hhline{|========|~|========|}
+			$\varnothing$ & & $\varnothing$ & & $\varnothing$ & & $\varnothing$ & & & Т$\clubsuit$ & & В$\clubsuit$ & & Д$\heartsuit$ & & Т$\spadesuit$ & \\
+			& 0 & & 0 & & 0 & & 0 & & & 2 & & -2 & & 2 & & -2 \\
+			\cline{1-8} \cline{10-17}
+			$\varnothing$ & & К$\heartsuit$ & & Д$\heartsuit$ & & Т$\heartsuit$ & & & Т$\clubsuit$ & & В$\clubsuit$ & & Д$\heartsuit$ & & Т$\diamondsuit$ & \\
+			& -2 & & 2 & & 2 & & -2 & & & 2 & & 2 & & -2 & & -2 \\
+			\cline{1-8} \cline{10-17}
+			Д$\clubsuit$ & & К$\spadesuit$ & & Д$\spadesuit$ & & В$\spadesuit$ & & & Т$\clubsuit$ & & К$\spadesuit$ & & Д$\spadesuit$ & & Т$\spadesuit$ & \\
+			& -1 & & -1 & & 3 & & -1 & & & -1 & & -1 & & 3 & & -1 \\
+			\cline{1-8} \cline{10-17}
+			Д$\clubsuit$ & & К$\spadesuit$ & & Д$\spadesuit$ & & Т$\spadesuit$ & & & Т$\clubsuit$ & & К$\diamondsuit$ & & Д$\diamondsuit$ & & Т$\diamondsuit$ & \\
+			& -1 & & -1 & & 3 & & -1 & & & -1 & & 3 & & -1 & & -1 \\
+			\cline{1-8} \cline{10-17}
+			Д$\clubsuit$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & Т$\diamondsuit$ & & & Т$\clubsuit$ & & К$\heartsuit$ & & Д$\heartsuit$ & & Т$\spadesuit$ & \\
+			& -2 & & -2 & & 2 & & 2 & & & 2 & & -2 & & 2 & & -2 \\
+			\cline{1-8} \cline{10-17}
+			Д$\clubsuit$ & & К$\heartsuit$ & & Д$\spadesuit$ & & Т$\heartsuit$ & & & Т$\clubsuit$ & & К$\heartsuit$ & & Д$\heartsuit$ & & Т$\diamondsuit$ & \\
+			& -2 & & -2 & & 2 & & 2 & & & 2 & & 2 & & -2 & & -2 \\
+			\cline{1-8} \cline{10-17}
+			Д$\clubsuit$ & & К$\heartsuit$ & & Д$\heartsuit$ & & Т$\heartsuit$ & & & Т$\clubsuit$ & & К$\heartsuit$ & & Д$\heartsuit$ & & Т$\heartsuit$ & \\
+			& -2 & & 2 & & 2 & & -2 & & & -2 & & 2 & & 2 & & -2 \\
+			\cline{1-8} \cline{10-17}
+			В$\diamondsuit$ & & К$\spadesuit$ & & В$\heartsuit$ & & Т$\spadesuit$ & & & К$\clubsuit$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+			& -2 & & -2 & & 2 & & 2 & & & -2 & & 2 & & -2 & & 2 \\
+			\cline{1-8} \cline{10-17}
+			Т$\clubsuit$ & & В$\clubsuit$ & & $\varnothing$ & & Т$\spadesuit$ & & & К$\clubsuit$ & & К$\diamondsuit$ & & Д$\diamondsuit$ & & Т$\diamondsuit$ & \\
+			& 2 & & -2 & & 2 & & -2 & & & -1 & & 3 & & -1 & & -1 \\
+			\cline{1-8} \cline{10-17}
+			Т$\clubsuit$ & & В$\clubsuit$ & & $\varnothing$ & & Т$\diamondsuit$ & & & К$\clubsuit$ & & К$\heartsuit$ & & Д$\heartsuit$ & & Т$\heartsuit$ & \\
+			& 2 & & 2 & & -2 & & -2 & & & -2 & & 2 & & 2 & & -2 \\
+			\cline{1-8} \cline{10-17}
+			Т$\clubsuit$ & & В$\clubsuit$ & & Д$\diamondsuit$ & & Т$\spadesuit$ & \\
+			& 2 & & -2 & & 2 & & -2 \\
+			\cline{1-8}
+		\end{tabular}
+	\end{SingleSpace}
+\end{table}
+
+In practice, obviously, such a variety of solutions is little better than none at all "--- the result is not applicable even as a list of possible agreements, since this would require common knowledge among all 4 players about which agreement applies to each of $\sim 63$ millions of possible dealings. If we reject the idea of ​​rational agents with synchronized memory of tens of millions of cells as clearly artificial, it turns out that even in basic strategies <<Tesseract>> implies the use of heuristics by players that are parameterized not only by the payoff matrix of the layout. That is, based on the players having a certain internal state that affects the choice of strategy in accordance with a certain algorithm, we inevitably find ourselves in the scheme from the figure \ref{fig:repeat}, which allows us to hope for the applicability of the <<Tesseract>> in the study of the <<cohesion>> phenomenon. %На практике, очевидно, такое многообразие решений немногим лучше их полного отсутствия "--- результат не применим даже в качестве перечисления возможных соглашений, поскольку это требовало бы общего для всех 4 игроков знания о том, какое соглашение применяется для каждого из $\sim 63$ миллионов возможных раскладов. Если отвергнуть идею о рациональных агентах с синхронизированной памятью на десятки миллионов ячеек как явно искусственную, получается, что даже в базовых стратегиях <<Тессеракт>> подразумевает использование игроками эвристик, параметризующихся не только платёжной матрицей расклада. То есть, исходя из наличия у игроков некоего внутреннего состояния, влияющего на выбор стратегии в соответствии с неким алгоритмом, мы неизбежно оказываемся в схеме с рисунка \ref{fig:repeat}, что позволяет надеяться на применимость <<Тессеракта>> в исследованиях феномена <<сыгранности>>.
+
+%\section{Формальная модель}\label{app:D3}
+%
+%С формальной точки зрения каждый расклад <<Тессеракта>> можно представить в виде игры развёрнутой формы с несовершенной информацией. Дерево игры имеет фиксированную высоту в 32 ребра от корня до каждой из терминальных вершин и разбивается на 4 слоя по 8 рёбер в высоту каждый, соответствующих кругам розыгрыша. Каждая вершина характеризуется набором параметров $\left\langle i, a, T, H\right\rangle$:
+%
+%\begin{itemize}
+%	\item $i = 1 \ldots 4$ "--- номер слоя/круга;
+%	\item $a = 1 \ldots 4$ "--- номер игрока с правом хода;
+%	\item $T = (T^1, T^2, T^3, T^4)$ "--- множества старших карт, сыгранных к этому моменту на каждом круге; 
+%	\item $H = (H^1, H^2, H^3, H^4)$ "--- множества старших карт, оставшихся к этому моменту в руках игроков.
+%\end{itemize}
+%
+%Нетерминальные вершины бывают двух типов - для игры и для сброса. В игровой вершине слоя $i$ игрок $a$ с правом хода может переместить один любой элемент из множества $H^a$ в множество $T^i$ (при непустоте $H^a$). В вершине для сброса же, соответственно, игрок $a$ может исключить из $H^a$ один любой элемент. Кроме того в вершинах обоего типа игрок с правом хода, в том случае если количественно оставшихся у него ходов включая текущий больше чем старших карт в руке, может ничего не менять, что соответствует игре или сбросу младшей карты. Легальная цепочка ходов в каждом слое дерева включает по одной вершине обоих типов для каждого из игроков. При этом информационные наборы таковы, что вершины одного типа $\left\langle i_1, a_1, T_1, H_1\right\rangle$ и $\left\langle i_2, a_2, T_2, H_2\right\rangle$ входят в один набор в том и только том случае, когда $i_1 = i_2$, $a_1 = a_2$, $T_1^k = T_2^k, \forall k < i$ и $H_1^a = H_2^a$. Такая информационная структура отражает то, что в рамках одного круга карты играются всеми соперниками сперва в закрытую, а раскрываются только после того, как все завершили сброс, фактически делая несущественным порядок ходов внутри каждого слоя.
+%
+%Для терминальных вершин из этого набора параметров выводится единственный имеющий смысл для определения выплат "--- множество всех сыгранных старших карт $T^* = T^1 \cup T^2 \cup T^3 \cup T^4$. Если обозначить символом $\mathcal{D}^a(T^*)$ операцию исключения из множества сыгранных карт парных с точки зрения игрока $a$, то вектор штрафов приобретает вид $f = (f^1, f^2, f^3, f^4), f^a = \left| 2 \left| \mathcal{D}^a(T^*) \right| - 8 \right|$. Соответственно выводится вектор выплат $u = (u^1, u^2, u^3, u^4), u^a = \frac{1}{4} (f^1 + f^2 + f^3 + f^4) - f^a$. С использованием всего этого теоретически возможно построение полного дерева любого расклада, однако при помощи элементарного комбинаторного рассуждения можно подсчитать, сколько всевозможных партий можно сыграть на одной раздаче "--- $(5 \cdot 6 \cdot 7 \cdot 8)^4 \approx 8 \cdot 10^{12}$. Хотя в эпоху современной вычислительной техники $8$ триллионов "--- уже не настолько пугающее число, подобные экзерсисы выходят за рамки этого труда.
+%
+%Во избежание вскрывшегося комбинаторного взрыва множество стратегий любого игрока $a$ можно представить в виде пространства всевозможных комбинаций четырёх элементов $S^a = S^a_1 \times S^a_2 \times S^a_3 \times S^a_4$, по одному на каждый круг ходов. Каждая компонента $s^a_i \in S^a_i$ представляет собой произвольную функцию, берущую аргументами текущую руку $H^a$ и все предыдущие сыгранные круги $T^k, k < i$ и возвращающую пару карт $(p, d \in H^a \cup \{\varnothing\})$, где $p$ обозначает карту для игры, $d$ "--- карту для сброса, а $\varnothing$ "--- произвольную младшую карту. Понятное дело, если обе карты старшие, то они должны быть различны, а младшие карты можно использовать, только если их ещё хватает в руке. Естественно сразу задаться вопросом, а нельзя ли для этой игры подобрать какое-то более простое представление с совершенной информацией "--- вдруг закрытость сброса не имеет большого значения для хода игры? Опровергнем это на примере того же розыгрыша из предыдущего раздела, обратив внимание только на последний круг ходов, представимый в виде обычной игры в нормальной форме.
+%
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Розыгрыш трёх кругов (вар. А)}
+%	\label{tab:cards4}
+%	\begin{SingleSpace}
+%		\newcolumntype{a}{>{\centering}m{1.5em}}
+%		\newcolumntype{d}{>{\centering\columncolor{lightgray}}m{1.5em}}
+%		\begin{tabular}{|c|ad|ad|ad|ad|c|}
+%			\hline
+%			Игрок & \multicolumn{8}{c|}{Круги ходов} & Штраф \\
+%			\hline
+%			& \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{} & \\
+%			$1$ & Д$\clubsuit$ & Т$\clubsuit$ & & & & К$\clubsuit$ & & & \\
+%			$2$ & К$\spadesuit$ & & & В$\clubsuit$ & & К$\heartsuit$ & & & \\
+%			$3$ & В$\heartsuit$ & & Д$\diamondsuit$ & & & Д$\heartsuit$ & & & \\
+%			$4$ & Т$\heartsuit$ & & Т$\diamondsuit$ & & Т$\spadesuit$ & & & & \\
+%			\hline
+%		\end{tabular}
+%	\end{SingleSpace}
+%\end{table}
+%
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Последний круг ходов (вар. А)}
+%	\label{tab:cards5}
+%	\begin{SingleSpace}
+%		\begin{tabular}{|lr|lr|lr|lr|}
+%			\hline
+%			$s^1$ & & $s^2$ & & $s^3$ & & $s^4$ & \\
+%			& $u^1(s)$ & & $u^2(s)$ & & $u^3(s)$ & & $u^4(s)$ \\
+%			\hline \hline
+%			$\varnothing$ & & $\varnothing$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			$\varnothing$ & & $\varnothing$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& -1 & & -1 & & -1 & & +3 \\
+%			\hline
+%			$\varnothing$ & & $\varnothing$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& -3 & & +1 & & +1 & & +1 \\
+%			\hline
+%			$\varnothing$ & & $\varnothing$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& +1 & & -3 & & +1 & & +1 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& +1 & & -3 & & +1 & & +1 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& +2 & & -2 & & +2 & & -2 \\
+%			\hline \rowcolor{lightgray}
+%			В$\diamondsuit$ & & $\varnothing$ & & $\varnothing$ & & $\varnothing$ & \\ \rowcolor{lightgray}
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			В$\diamondsuit$ & & $\varnothing$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			В$\diamondsuit$ & & $\varnothing$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			В$\diamondsuit$ & & $\varnothing$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& +1 & & +1 & & +1 & & -3 \\
+%			\hline
+%			В$\diamondsuit$ & & К$\diamondsuit$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			В$\diamondsuit$ & & К$\diamondsuit$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& +2 & & -2 & & +2 & & -2 \\
+%			\hline
+%			В$\diamondsuit$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& +2 & & +2 & & -2 & & -2 \\
+%			\hline
+%			В$\diamondsuit$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& +1 & & +1 & & +1 & & -3 \\
+%			\hline
+%		\end{tabular}
+%	\end{SingleSpace}
+%\end{table}
+%
+%Рассмотрим расклад, когда у всех на руках осталось по две карты (таблица \ref{tab:cards4}), как игру в нормальной форме $\Gamma = \langle A, S^a, u^a(s), a \in A \rangle$. Здесь $A = \{1, 2, 3, 4\}$, $S^1 = \{\varnothing, \text{В}\diamondsuit\}$, $S^2 = \{\varnothing, \text{К}\diamondsuit\}$, $S^3 = \{\varnothing, \text{Д}\spadesuit\}$, $S^4 = \{\varnothing, \text{В}\spadesuit\}$, а использование игроком стратегии $s^a$ подразумевает, что карту $s^a$ он играет, а оставшуюся сбрасывает. В таблице \ref{tab:cards5} перечислены значения функции выплат для всех сочетаний чистых стратегий, а серым выделено единственное равновесие по Нэшу в чистых стратегиях. Если предполагать, что сокрытая от игроков информация не имеет значения, то разумно ожидать, что в любых альтернативных раскладах с совпадающим публичным знанием также будет существовать равновесие по Нэшу, разнящееся с этим только, возможно, стратегией знающего об отличии игрока. Продемонстрируем противоположное на слегка модифицированном розыгрыше, отличающемся от приведённого выше только лишь тем, что на третьем круге первый игрок сбросил В$\diamondsuit$ вместо К$\clubsuit$.
+%
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Розыгрыш трёх кругов (вар. Б)}
+%	\label{tab:cards6}
+%	\begin{SingleSpace}
+%		\newcolumntype{a}{>{\centering}m{1.5em}}
+%		\newcolumntype{d}{>{\centering\columncolor{lightgray}}m{1.5em}}
+%		\begin{tabular}{|c|ad|ad|ad|ad|c|}
+%			\hline
+%			Игрок & \multicolumn{8}{c|}{Круги ходов} & Штраф \\
+%			\hline
+%			& \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{} & \\
+%			$1$ & Д$\clubsuit$ & Т$\clubsuit$ & & & & В$\diamondsuit$ & & & \\
+%			$2$ & К$\spadesuit$ & & & В$\clubsuit$ & & К$\heartsuit$ & & & \\
+%			$3$ & В$\heartsuit$ & & Д$\diamondsuit$ & & & Д$\heartsuit$ & & & \\
+%			$4$ & Т$\heartsuit$ & & Т$\diamondsuit$ & & Т$\spadesuit$ & & & & \\
+%			\hline
+%		\end{tabular}
+%	\end{SingleSpace}
+%\end{table}
+%
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Последний круг ходов (вар. Б)}
+%	\label{tab:cards7}
+%	\begin{SingleSpace}
+%		\begin{tabular}{|lr|lr|lr|lr|}
+%			\hline
+%			$s^1$ & & $s^2$ & & $s^3$ & & $s^4$ & \\
+%			& $u^1(s)$ & & $u^2(s)$ & & $u^3(s)$ & & $u^4(s)$ \\
+%			\hline \hline
+%			$\varnothing$ & & $\varnothing$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			$\varnothing$ & & $\varnothing$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& -1 & & -1 & & -1 & & +3 \\
+%			\hline \rowcolor{lightgray}
+%			$\varnothing$ & & $\varnothing$ & & Д$\spadesuit$ & & $\varnothing$ & \\ \rowcolor{lightgray}
+%			& -3 & & +1 & & +1 & & +1 \\
+%			\hline
+%			$\varnothing$ & & $\varnothing$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& +1 & & -3 & & +1 & & +1 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& +1 & & -3 & & +1 & & +1 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			$\varnothing$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& +2 & & -2 & & +2 & & -2 \\
+%			\hline
+%			К$\clubsuit$ & & $\varnothing$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& -3 & & +1 & & +1 & & +1 \\
+%			\hline
+%			К$\clubsuit$ & & $\varnothing$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& -3 & & +1 & & +1 & & +1 \\
+%			\hline
+%			К$\clubsuit$ & & $\varnothing$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& -3 & & +1 & & +1 & & +1 \\
+%			\hline
+%			К$\clubsuit$ & & $\varnothing$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& -2 & & +2 & & +2 & & -2 \\
+%			\hline
+%			К$\clubsuit$ & & К$\diamondsuit$ & & $\varnothing$ & & $\varnothing$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			К$\clubsuit$ & & К$\diamondsuit$ & & $\varnothing$ & & В$\spadesuit$ & \\
+%			& 0 & & 0 & & 0 & & 0 \\
+%			\hline
+%			К$\clubsuit$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & $\varnothing$ & \\
+%			& -2 & & +2 & & +2 & & -2 \\
+%			\hline
+%			К$\clubsuit$ & & К$\diamondsuit$ & & Д$\spadesuit$ & & В$\spadesuit$ & \\
+%			& +1 & & +1 & & +1 & & -3 \\
+%			\hline
+%		\end{tabular}
+%	\end{SingleSpace}
+%\end{table}
+%
+%В результате такого изменения множество доступных на последнем круге первому игроку стратегий превращается в $S^1 = \{\varnothing, \text{К}\clubsuit\}$, что даёт другую таблицу исходов. В этой игре также присутствует одно равновесие по Нэшу в чистых стратегиях, однако оно отличается от предыдущего ходами не только первого, но и третьего игроков, что говорит о существенности сброса в закрытую.
+%
+%\section{Стратегии последнего круга}\label{app:D4}
+
